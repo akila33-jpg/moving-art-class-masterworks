@@ -1,0 +1,398 @@
+[
+  {
+    "id": "hokusai-red-fuji",
+    "url": "https://images.metmuseum.org/CRDImages/as/original/DP141062.jpg",
+    "page": "https://www.metmuseum.org/art/collection/search/36490",
+    "license": "CC0 / The Met Open Access",
+    "commons": null,
+    "credit": "The Metropolitan Museum of Art, New York, JP9 (Rogers Fund, 1914). Open Access, CC0.",
+    "download": {
+      "ok": true,
+      "bytes": 3158200,
+      "ctype": "image/jpeg",
+      "final": "https://images.metmuseum.org/CRDImages/as/original/DP141062.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1103,
+      "out_bytes": 472471,
+      "src_w": 3865,
+      "src_h": 2665
+    }
+  },
+  {
+    "id": "monet-impression-sunrise",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/3840px-Monet_-_Impression%2C_Sunrise.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Monet_-_Impression,_Sunrise.jpg",
+    "license": "Public domain (Wikimedia Commons)",
+    "commons": "File:Monet_-_Impression,_Sunrise.jpg",
+    "credit": "Wikimedia Commons, public domain reproduction of a public-domain painting. Official work page: Musée Marmottan Monet, inv. 4014.",
+    "download": {
+      "ok": true,
+      "bytes": 3385462,
+      "ctype": "image/jpeg",
+      "final": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Monet_-_Impression%2C_Sunrise.jpg/3840px-Monet_-_Impression%2C_Sunrise.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1241,
+      "out_bytes": 438899,
+      "src_w": 3840,
+      "src_h": 2979
+    }
+  },
+  {
+    "id": "turner-norham-castle-sunrise",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Jmw_turner%2C_norham_castle%2C_alba%2C_1845_ca.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Jmw_turner,_norham_castle,_alba,_1845_ca.jpg",
+    "license": "CC BY 3.0 (photograph by Sailko); painting in the public domain",
+    "commons": "File:Jmw_turner,_norham_castle,_alba,_1845_ca.jpg",
+    "credit": "Photograph by Sailko, CC BY 3.0, via Wikimedia Commons. Painting by J. M. W. Turner is in the public domain. Official work page: Tate, N01981.",
+    "download": {
+      "ok": true,
+      "bytes": 6127796,
+      "ctype": "image/jpeg",
+      "final": "https://upload.wikimedia.org/wikipedia/commons/5/51/Jmw_turner%2C_norham_castle%2C_alba%2C_1845_ca.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1255,
+      "out_bytes": 311426,
+      "src_w": 3954,
+      "src_h": 3102
+    }
+  },
+  {
+    "id": "hiroshige-sudden-shower",
+    "url": "https://images.metmuseum.org/CRDImages/as/original/DP130156.jpg",
+    "page": "https://www.metmuseum.org/art/collection/search/55433",
+    "license": "CC0 / The Met Open Access",
+    "commons": null,
+    "credit": "The Metropolitan Museum of Art, New York, JP2522. Open Access, CC0.",
+    "download": {
+      "ok": true,
+      "bytes": 3043911,
+      "ctype": "image/jpeg",
+      "final": "https://images.metmuseum.org/CRDImages/as/original/DP130156.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1098,
+      "out_h": 1600,
+      "out_bytes": 466297,
+      "src_w": 2650,
+      "src_h": 3860
+    }
+  },
+  {
+    "id": "hokusai-kajikazawa",
+    "url": "https://images.metmuseum.org/CRDImages/as/original/DP140973.jpg",
+    "page": "https://www.metmuseum.org/art/collection/search/56727",
+    "license": "CC0 / The Met Open Access",
+    "commons": null,
+    "credit": "The Metropolitan Museum of Art, New York, JP2581. Open Access, CC0.",
+    "download": {
+      "ok": true,
+      "bytes": 2815952,
+      "ctype": "image/jpeg",
+      "final": "https://images.metmuseum.org/CRDImages/as/original/DP140973.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1061,
+      "out_bytes": 450897,
+      "src_w": 3925,
+      "src_h": 2603
+    }
+  },
+  {
+    "id": "monet-japanese-footbridge",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Claude_Monet%2C_The_Japanese_Footbridge%2C_1899%2C_NGA_74796.jpg/3840px-Claude_Monet%2C_The_Japanese_Footbridge%2C_1899%2C_NGA_74796.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Claude_Monet,_The_Japanese_Footbridge,_1899,_NGA_74796.jpg",
+    "license": "CC0 (National Gallery of Art Open Access, donated to Wikimedia Commons)",
+    "commons": "File:Claude Monet, The Japanese Footbridge, 1899, NGA 74796.jpg",
+    "credit": "National Gallery of Art, Washington, 1992.9.1, Open Access CC0, via Wikimedia Commons.",
+    "download": {
+      "ok": true,
+      "bytes": 4992572,
+      "ctype": "image/jpeg",
+      "final": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Claude_Monet%2C_The_Japanese_Footbridge%2C_1899%2C_NGA_74796.jpg/3840px-Claude_Monet%2C_The_Japanese_Footbridge%2C_1899%2C_NGA_74796.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1290,
+      "out_bytes": 736236,
+      "src_w": 3840,
+      "src_h": 3096
+    }
+  },
+  {
+    "id": "vangogh-wheat-field-cypresses",
+    "url": "https://images.metmuseum.org/CRDImages/ep/original/DP-42549-001.jpg",
+    "page": "https://www.metmuseum.org/art/collection/search/436535",
+    "license": "CC0 / The Met Open Access",
+    "commons": null,
+    "credit": "The Metropolitan Museum of Art, New York, 1993.132. Open Access, CC0.",
+    "download": {
+      "ok": true,
+      "bytes": 8291194,
+      "ctype": "image/jpeg",
+      "final": "https://images.metmuseum.org/CRDImages/ep/original/DP-42549-001.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1274,
+      "out_bytes": 745934,
+      "src_w": 4000,
+      "src_h": 3184
+    }
+  },
+  {
+    "id": "klimt-beech-grove-i",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Gustav_Klimt_-_Beech_Grove_I_-_Google_Art_Project.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Gustav_Klimt_-_Beech_Grove_I_-_Google_Art_Project.jpg",
+    "license": "Public domain (Wikimedia Commons, Google Arts & Culture)",
+    "commons": "File:Gustav Klimt - Beech Grove I - Google Art Project.jpg",
+    "credit": "Google Arts & Culture / Wikimedia Commons, public domain reproduction. Official work page: SKD, Gal.-Nr. 2479 A.",
+    "download": {
+      "ok": true,
+      "bytes": 10997248,
+      "ctype": "image/jpeg",
+      "final": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Gustav_Klimt_-_Beech_Grove_I_-_Google_Art_Project.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1588,
+      "out_bytes": 1270087,
+      "src_w": 3422,
+      "src_h": 3396
+    }
+  },
+  {
+    "id": "corot-fontainebleau-oaks",
+    "url": "https://images.metmuseum.org/CRDImages/ep/original/DT2009.jpg",
+    "page": "https://www.metmuseum.org/art/collection/search/435970",
+    "license": "CC0 / The Met Open Access",
+    "commons": null,
+    "credit": "The Metropolitan Museum of Art, New York, 1979.404. Open Access, CC0.",
+    "download": {
+      "ok": true,
+      "bytes": 3274388,
+      "ctype": "image/jpeg",
+      "final": "https://images.metmuseum.org/CRDImages/ep/original/DT2009.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1284,
+      "out_bytes": 573271,
+      "src_w": 3811,
+      "src_h": 3059
+    }
+  },
+  {
+    "id": "vangogh-undergrowth",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Vincent_van_Gogh_-_Undergrowth_-_Google_Art_Project.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Undergrowth_-_Google_Art_Project.jpg",
+    "license": "Public domain (Wikimedia Commons, Google Arts & Culture)",
+    "commons": "File:Vincent van Gogh - Undergrowth - Google Art Project.jpg",
+    "credit": "Google Arts & Culture / Wikimedia Commons, public domain reproduction. Official work page: Van Gogh Museum, s0051V1962.",
+    "download": {
+      "ok": true,
+      "bytes": 5190990,
+      "ctype": "image/jpeg",
+      "final": "https://upload.wikimedia.org/wikipedia/commons/5/51/Vincent_van_Gogh_-_Undergrowth_-_Google_Art_Project.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1263,
+      "out_bytes": 862483,
+      "src_w": 3142,
+      "src_h": 2481
+    }
+  },
+  {
+    "id": "hiroshige-seta-sunset",
+    "url": "https://images.metmuseum.org/CRDImages/as/original/DP122157.jpg",
+    "page": "https://www.metmuseum.org/art/collection/search/57050",
+    "license": "CC0 / The Met Open Access",
+    "commons": null,
+    "credit": "The Metropolitan Museum of Art, New York, JP2852. Open Access, CC0.",
+    "download": {
+      "ok": true,
+      "bytes": 2715759,
+      "ctype": "image/jpeg",
+      "final": "https://images.metmuseum.org/CRDImages/as/original/DP122157.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1088,
+      "out_bytes": 400805,
+      "src_w": 3881,
+      "src_h": 2638
+    }
+  },
+  {
+    "id": "turner-fighting-temeraire",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/3840px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Fighting_Temeraire,_JMW_Turner,_National_Gallery.jpg",
+    "license": "Public domain (Wikimedia Commons)",
+    "commons": "File:The Fighting Temeraire, JMW Turner, National Gallery.jpg",
+    "credit": "Wikimedia Commons, public domain reproduction of a public-domain painting. Official work page: The National Gallery, London, NG524.",
+    "download": {
+      "ok": true,
+      "bytes": 2304168,
+      "ctype": "image/jpeg",
+      "final": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg/3840px-The_Fighting_Temeraire%2C_JMW_Turner%2C_National_Gallery.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1189,
+      "out_bytes": 334167,
+      "src_w": 3840,
+      "src_h": 2853
+    }
+  },
+  {
+    "id": "vangogh-starry-night",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/3840px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+    "license": "Public domain (Wikimedia Commons, Google Arts & Culture)",
+    "commons": "File:Van Gogh - Starry Night - Google Art Project.jpg",
+    "credit": "Google Arts & Culture / Wikimedia Commons, public domain reproduction. Official work page: MoMA, 472.1941.",
+    "download": {
+      "ok": true,
+      "bytes": 5545153,
+      "ctype": "image/jpeg",
+      "final": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/3840px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1267,
+      "out_bytes": 826580,
+      "src_w": 3840,
+      "src_h": 3041
+    }
+  },
+  {
+    "id": "vangogh-starry-night-rhone",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Vincent_van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/3840px-Vincent_van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+    "license": "Public domain (Wikimedia Commons, Google Arts & Culture)",
+    "commons": "File:Vincent van Gogh - Starry Night - Google Art Project.jpg",
+    "credit": "Google Arts & Culture / Wikimedia Commons, public domain reproduction. Official work page: Musée d'Orsay, RF 1975 19.",
+    "download": {
+      "ok": true,
+      "bytes": 3085747,
+      "ctype": "image/jpeg",
+      "final": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Vincent_van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/3840px-Vincent_van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1236,
+      "out_bytes": 643094,
+      "src_w": 3840,
+      "src_h": 2967
+    }
+  },
+  {
+    "id": "friedrich-moonrise-over-the-sea",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/0/01/Caspar_David_Friedrich_-_Mondaufgang_am_Meer_-_Google_Art_Project.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Caspar_David_Friedrich_-_Mondaufgang_am_Meer_-_Google_Art_Project.jpg",
+    "license": "Public domain (Wikimedia Commons, Google Arts & Culture)",
+    "commons": "File:Caspar David Friedrich - Mondaufgang am Meer - Google Art Project.jpg",
+    "credit": "Google Arts & Culture / Wikimedia Commons, public domain reproduction. Official work page: Staatliche Museen zu Berlin, W.S. 53.",
+    "download": {
+      "ok": true,
+      "bytes": 4276240,
+      "ctype": "image/jpeg",
+      "final": "https://upload.wikimedia.org/wikipedia/commons/0/01/Caspar_David_Friedrich_-_Mondaufgang_am_Meer_-_Google_Art_Project.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1224,
+      "out_bytes": 314577,
+      "src_w": 3543,
+      "src_h": 2710
+    }
+  },
+  {
+    "id": "vangogh-olive-trees-moma",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Vincent_van_Gogh_-_The_Olive_Trees_-_Google_Art_Project.jpg/3840px-Vincent_van_Gogh_-_The_Olive_Trees_-_Google_Art_Project.jpg",
+    "page": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_The_Olive_Trees_-_Google_Art_Project.jpg",
+    "license": "Public domain (Wikimedia Commons, Google Arts & Culture)",
+    "commons": "File:Vincent van Gogh - The Olive Trees - Google Art Project.jpg",
+    "credit": "Google Arts & Culture / Wikimedia Commons, public domain reproduction. Official work page: MoMA, 581.1998 / works/80013.",
+    "download": {
+      "ok": true,
+      "bytes": 3025904,
+      "ctype": "image/jpeg",
+      "final": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Vincent_van_Gogh_-_The_Olive_Trees_-_Google_Art_Project.jpg/3840px-Vincent_van_Gogh_-_The_Olive_Trees_-_Google_Art_Project.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1271,
+      "out_bytes": 637252,
+      "src_w": 3840,
+      "src_h": 3050
+    }
+  },
+  {
+    "id": "vangogh-olive-trees-met",
+    "url": "https://images.metmuseum.org/CRDImages/ep/original/DT1946.jpg",
+    "page": "https://www.metmuseum.org/art/collection/search/437998",
+    "license": "CC0 / The Met Open Access",
+    "commons": null,
+    "credit": "The Metropolitan Museum of Art, New York, 1998.325.1. Open Access, CC0.",
+    "download": {
+      "ok": true,
+      "bytes": 3940740,
+      "ctype": "image/jpeg",
+      "final": "https://images.metmuseum.org/CRDImages/ep/original/DT1946.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1276,
+      "out_bytes": 700372,
+      "src_w": 3811,
+      "src_h": 3040
+    }
+  },
+  {
+    "id": "vangogh-olive-trees-mia",
+    "url": "https://6.api.artsmia.org/full/1218.jpg",
+    "page": "https://collections.artsmia.org/art/1218/",
+    "license": "Public Domain (Minneapolis Institute of Art; rights_type: Public Domain, Rights_Image_Display: Full)",
+    "commons": null,
+    "credit": "Minneapolis Institute of Art, 51.7, Public Domain. Image via Mia collection API.",
+    "download": {
+      "ok": true,
+      "bytes": 28483939,
+      "ctype": "image/jpeg",
+      "final": "https://6.api.artsmia.org/full/1218.jpg",
+      "code": 200
+    },
+    "resized": {
+      "out_w": 1600,
+      "out_h": 1271,
+      "out_bytes": 760909,
+      "src_w": 10501,
+      "src_h": 8342
+    }
+  }
+]

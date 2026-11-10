@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="《移動的美術課》藝術史參考：六個主題的可核對名作、繪畫觀察重點，以及梵谷橄欖樹三館藏版本比較。公有領域與開放授權作品嵌入圖片；仍有著作權者只提供館方連結。">
+<title>《移動的美術課》藝術史參考｜Akila 阿錡拉</title>
+<style>
+:root{
+  --paper:#f3eee3;
+  --paper-2:#e8dfcc;
+  --card:#fffcf6;
+  --ink:#1a1612;
+  --muted:#534a40;
+  --rule:#cbbda6;
+  --gold:#8a4b14;
+  --gold-2:#c4893a;
+  --link:#6b3510;
+  --link-h:#3f1d08;
+  --dawn:#9a4e12;
+  --water:#1f5460;
+  --earth:#7a3e1c;
+  --forest:#2f4a30;
+  --dusk:#7a2e22;
+  --night:#1b2a4a;
+  --ok:#1f5b3a;
+  --warn:#7a3a12;
+  --shadow:0 10px 30px rgba(40,30,16,.08);
+  --radius:16px;
+  --nav-h:58px;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + 16px)}
+body{
+  margin:0;
+  background:
+    radial-gradient(1200px 500px at 10% -10%, rgba(196,137,58,.18), transparent 55%),
+    radial-gradient(900px 400px at 100% 0%, rgba(27,42,74,.08), transparent 50%),
+    var(--paper);
+  color:var(--ink);
+  font-family:"Iwanami Mincho","Source Han Serif TC","Noto Serif TC","PMingLiU","Songti TC","PingFang TC","Hiragino Mincho ProN",serif;
+  font-size:18px;
+  line-height:1.7;
+  text-rendering:optimizeLegibility;
+}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--link);text-underline-offset:3px}
+a:hover{color:var(--link-h)}
+.wrap{width:min(var(--max), calc(100% - 32px));margin:0 auto}
+.skip{
+  position:absolute;left:-999px;top:8px;background:#111;color:#fff;padding:8px 12px;z-index:20
+}
+.skip:focus{left:8px}
+/* header */
+.hero{
+  padding:36px 0 20px;
+  border-bottom:1px solid var(--rule);
+}
+.kicker{
+  display:flex;flex-wrap:wrap;gap:8px 16px;align-items:baseline;
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei","Source Han Sans TC",sans-serif;
+  font-size:13px;letter-spacing:.12em;text-transform:none;color:var(--muted);margin:0 0 10px
+}
+.hero h1{
+  font-weight:700;font-size:clamp(28px, 5vw, 44px);line-height:1.25;margin:0 0 8px;
+  letter-spacing:.04em;
+}
+.hero .sub{font-size:clamp(16px, 2.4vw, 20px);margin:0 0 18px;color:var(--muted)}
+.lede{max-width:70ch;margin:0 0 14px}
+.meta-row{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
+.pill{
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  font-size:13px;background:#fff;border:1px solid var(--rule);border-radius:999px;padding:4px 10px;color:var(--muted)
+}
+/* sticky nav */
+.navwrap{
+  position:sticky;top:0;z-index:10;
+  background:rgba(243,238,227,.94);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--rule);
+}
+nav{
+  display:flex;gap:4px;overflow:auto hidden;padding:8px 0;
+  -webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;
+}
+nav a{
+  flex:0 0 auto;
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  font-size:14px;font-weight:600;text-decoration:none;
+  color:var(--ink);padding:8px 12px;border-radius:999px;border:1px solid transparent;
+}
+nav a:hover{background:#fff;border-color:var(--rule)}
+nav a[aria-current="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+/* sections */
+section.theme{padding:42px 0 16px;border-top:1px solid var(--rule)}
+.theme-head{max-width:74ch;margin-bottom:24px}
+.eyebrow{
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  font-size:12px;letter-spacing:.16em;color:var(--muted);margin:0 0 6px
+}
+.theme-head h2{font-size:clamp(24px, 3.6vw, 34px);margin:0 0 8px;letter-spacing:.06em}
+.theme-head .work-desc{margin:0 0 10px;font-size:18px}
+.theme-head .note{margin:0;color:var(--muted);font-size:16px}
+.theme#sunrise{--accent:var(--dawn)}
+.theme#water{--accent:var(--water)}
+.theme#color{--accent:var(--earth)}
+.theme#trees{--accent:var(--forest)}
+.theme#dusk{--accent:var(--dusk)}
+.theme#stars{--accent:var(--night)}
+.theme#olives{--accent:#4a5a20}
+.theme#copyright{--accent:var(--gold)}
+.theme-head h2{box-shadow:inset 0 -6px 0 color-mix(in srgb, var(--accent, var(--gold-2)) 25%, transparent)}
+/* cards */
+.grid{display:grid;gap:22px;grid-template-columns:1fr;margin:0 0 12px}
+@media (min-width:860px){
+  .grid{grid-template-columns:1fr 1fr}
+  .grid.triple{grid-template-columns:1fr 1fr 1fr}
+  .card.span2{grid-column:span 2}
+}
+@media (min-width:1100px){
+  .grid.standard{grid-template-columns:1fr 1fr 1fr}
+  .card.span2{grid-column:auto}
+}
+.card{
+  background:var(--card);
+  border:1px solid var(--rule);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+  overflow:hidden;
+  display:flex;flex-direction:column;
+  min-width:0;
+}
+.imgwrap{
+  appearance:none;-webkit-appearance:none;
+  border:0;background:#ddd5c5;padding:0;cursor:zoom-in;
+  display:block;width:100%;
+  aspect-ratio:4/3;overflow:hidden;position:relative;
+}
+.imgwrap img{
+  width:100%;height:100%;object-fit:contain;background:#efe6d4;
+}
+.imgwrap:focus-visible{outline:3px solid var(--gold);outline-offset:-3px}
+.badge{
+  position:absolute;left:10px;top:10px;
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  font-size:11px;letter-spacing:.06em;background:rgba(255,252,246,.92);border:1px solid var(--rule);
+  border-radius:999px;padding:3px 8px;color:var(--ok);font-weight:700
+}
+.badge.linkonly{color:var(--warn)}
+.noimg{
+  position:relative;
+  aspect-ratio:4/3;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;
+  gap:10px;padding:22px;background:
+    repeating-linear-gradient(45deg, #f4efe4, #f4efe4 12px, #efe6d4 12px, #efe6d4 24px);
+  border-bottom:1px solid var(--rule);
+}
+.noimg p{margin:0;font-size:15px;color:var(--muted);max-width:40ch}
+.body{padding:16px 18px 20px;display:flex;flex-direction:column;gap:8px;flex:1}
+.theme-tag{margin:0;font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;font-size:12px;letter-spacing:.12em;color:var(--accent, var(--gold));font-weight:700}
+.body h3{margin:0;font-size:22px;line-height:1.35;letter-spacing:.04em}
+.body h3 .aka{font-weight:600;font-size:16px;color:var(--muted)}
+.orig{margin:0;color:var(--muted);font-size:15px}
+dl.facts{margin:8px 0 0;display:grid;gap:4px 12px}
+dl.facts > div{display:grid;grid-template-columns:5.2em 1fr;gap:8px;align-items:start}
+dl.facts dt{
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  font-size:12px;letter-spacing:.08em;color:var(--muted);padding-top:3px
+}
+dl.facts dd{margin:0}
+.license,.uncertain{margin:8px 0 0;font-size:13.5px;color:var(--muted);line-height:1.55}
+.uncertain{color:var(--warn)}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  font-weight:700;font-size:14px;text-decoration:none;
+  background:var(--ink);color:var(--paper)!important;
+  border-radius:999px;padding:9px 14px;margin-top:10px;width:fit-content;
+}
+.btn:hover{background:var(--gold)}
+.btn.ghost{background:#fff;color:var(--ink)!important;border:1px solid var(--ink)}
+.btn.ghost:hover{background:var(--paper-2)}
+.body h4{margin:14px 0 0;font-size:16px;letter-spacing:.08em}
+ol.tips{margin:6px 0 0;padding-left:1.2em}
+ol.tips li{margin:0 0 8px}
+.callout{
+  background:#fff;border:1px solid var(--rule);border-left:6px solid var(--earth);
+  border-radius:12px;padding:16px 18px;margin:8px 0 22px;max-width:80ch
+}
+.callout h3{margin:0 0 6px;font-size:18px}
+.callout p{margin:0 0 8px}
+.callout p:last-child{margin:0}
+/* olives compare */
+.compare .imgwrap{aspect-ratio:5/4}
+/* copyright */
+.prose{max-width:74ch}
+.prose h3{font-size:20px;margin:22px 0 8px}
+.prose ul{padding-left:1.2em}
+.prose li{margin:0 0 8px}
+footer{
+  margin-top:24px;padding:28px 0 48px;border-top:1px solid var(--rule);
+  color:var(--muted);font-size:14px
+}
+/* lightbox */
+.lb[hidden]{display:none}
+.lb{
+  position:fixed;inset:0;z-index:30;background:rgba(12,10,8,.92);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:16px;color:#f7f1e6
+}
+.lb img{max-width:min(1600px, 100%);max-height:calc(100vh - 120px);object-fit:contain;box-shadow:0 10px 40px #000}
+.lb .cap{max-width:80ch;margin:10px 0 0;font-size:14px;text-align:center;color:#ddd3c3}
+.lb .close{
+  position:absolute;top:10px;right:10px;appearance:none;border:1px solid #ccc;background:transparent;
+  color:#fff;border-radius:999px;padding:8px 14px;font:700 14px/1 "PingFang TC","Noto Sans TC",sans-serif;cursor:pointer
+}
+.lb .close:hover,.lb .close:focus{background:#fff;color:#111}
+@media print{
+  .navwrap,.skip,.btn,.lb{display:none!important}
+  body{background:#fff;font-size:12pt}
+  .card{break-inside:avoid;box-shadow:none}
+  .imgwrap{cursor:default}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">跳到主要內容</a>
+<header class="hero">
+  <div class="wrap">
+    <p class="kicker"><span>教學與創作參考</span><span>岡山文化中心聯展《蛻變》</span><span>2026年12月2日－27日</span></p>
+    <h1>《移動的美術課》藝術史參考</h1>
+    <p class="sub">Akila 阿錡拉　｜　從日出走到星空的六個主題</p>
+    <p class="lede">這組 2026 年的壓克力風景畫，記錄在不同教室之間往返時看見的光與風景，相信「生活即美育」。六幅都是 30 號（70 × 90 cm，不含框），畫中有反覆出現的飛鳥與蝴蝶。本頁為每一主題整理可核對的世界名作，方便上課投影，也方便自己動筆前對照。</p>
+    <p class="lede">公有領域或明確開放授權的作品，圖片已下載進這個網站，點圖可看大圖。仍有著作權、或館方影像需要另行授權的作品，本頁不放圖片，只提供館方觀看連結。所有作品都經過館方頁面或 Wikimedia Commons 核對；不確定的欄位會標示「待查證」，沒有編造館藏或年代。</p>
+    <div class="meta-row">
+      <span class="pill">六主題快速切換</span>
+      <span class="pill">圖片已內嵌，離線也可看已下載的圖</span>
+      <span class="pill">館方連結上課前請先連網測試</span>
+      <span class="pill">手機、平板、投影皆可用</span>
+    </div>
+  </div>
+</header>
+<div class="navwrap">
+  <nav class="wrap" aria-label="主題導覽">
+    <a href="#sunrise">朝陽</a>
+    <a href="#water">流水</a>
+    <a href="#color">原彩</a>
+    <a href="#trees">樹影</a>
+    <a href="#dusk">暮色</a>
+    <a href="#stars">星空</a>
+    <a href="#olives">橄欖樹比較</a>
+    <a href="#copyright">著作權</a>
+  </nav>
+</div>
+<main id="main">
+
+<section class="theme" id="sunrise">
+  <div class="wrap">
+    <header class="theme-head">
+      <p class="eyebrow">主題一</p>
+      <h2>〈朝陽〉</h2>
+      <p class="work-desc">第一道陽光灑落山頭，山稜染成一片金色，飛鳥迎著朝陽掠過，系列啟程。</p>
+      <p class="note">這三件作品分別示範：山怎樣被第一道光染色、太陽如何只靠一小點暖色成為視覺中心，以及形體如何溶進晨霧裡。飛鳥是你系列自己的貫穿元素，名作裡不一定有鳥，可以後加，但不要搶光與山稜的主角位置。</p>
+    </header>
+    <div class="grid standard">
+
+      <article class="card" id="work-red-fuji">
+        <button class="imgwrap" type="button" data-lb="images/hokusai-red-fuji.jpg" data-cap="葛飾北齋《凱風快晴》（赤富士），約 1830–32，紐約大都會藝術博物館 JP9。影像：The Met Open Access，CC0。">
+          <img src="images/hokusai-red-fuji.jpg" alt="葛飾北齋《凱風快晴》：赭紅的富士山矗立在魚鱗雲與藍天下" width="1600" height="1103">
+          <span class="badge">已嵌入　CC0</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">〈朝陽〉參考</p>
+          <h3>〈凱風快晴〉<span class="aka">（赤富士）</span></h3>
+          <p class="orig">South Wind, Clear Sky (Gaifū kaisei), also known as Red Fuji, from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>葛飾北齋（Katsushika Hokusai，1760–1849）</dd></div>
+            <div><dt>年代</dt><dd>約 1830–32 年</dd></div>
+            <div><dt>媒材</dt><dd>浮世繪木刻版畫；紙本墨色設色。此件印象約 24.4 × 35.6 cm</dd></div>
+            <div><dt>館藏</dt><dd>紐約大都會藝術博物館（The Metropolitan Museum of Art），編號 JP9</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：The Met Open Access，CC0。本頁使用館方開放影像並縮成約 1600 像素。</p>
+          <a class="btn" href="https://www.metmuseum.org/art/collection/search/36490" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>山體由下而上從青到赭紅，再到近白的峰頂，是「第一道光把山稜染色」最清楚的示範。壓克力可先鋪冷色山腳，再趁未乾用暖紅與黃往上揉，不要一開始就把整座山塗成同一種橘。</li>
+            <li>天空不是平塗的藍：橫向魚鱗雲讓畫面有風、有時刻。觀察雲朵如何由近而遠逐漸變小、變淡。</li>
+            <li>構圖極簡，一座山幾乎佔滿右半。畫 70 × 90 cm 時，也可以讓山稜成為唯一主體，不必堆細節。</li>
+            <li>畫中沒有飛鳥。系列裡迎著朝陽的鳥是你自己的語言，可放在雲層或山腰，但不要搶山與光的位置。</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card" id="work-impression-sunrise">
+        <button class="imgwrap" type="button" data-lb="images/monet-impression-sunrise.jpg" data-cap="克勞德·莫內《印象·日出》，1872，瑪摩丹美術館，編號 4014。影像：Wikimedia Commons，公有領域。">
+          <img src="images/monet-impression-sunrise.jpg" alt="莫內《印象·日出》：灰藍霧氣中一顆橘紅太陽，倒影垂直落在水面上" width="1600" height="1241">
+          <span class="badge">已嵌入　公有領域</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">〈朝陽〉參考</p>
+          <h3>〈印象·日出〉</h3>
+          <p class="orig">Impression, soleil levant / Impression, Sunrise</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>克勞德·莫內（Claude Monet，1840–1926）</dd></div>
+            <div><dt>年代</dt><dd>1872 年（畫上後加的紀年為「72」）</dd></div>
+            <div><dt>媒材</dt><dd>油彩、畫布。館方標示不含框 50 × 65 cm</dd></div>
+            <div><dt>館藏</dt><dd>巴黎瑪摩丹美術館（Musée Marmottan Monet），編號 4014</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：Wikimedia Commons 公有領域複製圖（File:Monet_-_Impression,_Sunrise.jpg）。請同時以館方頁面核對色彩與說明。舊文獻常寫 48 × 63 cm，本頁改採館方現標的 50 × 65 cm。</p>
+          <a class="btn" href="https://www.marmottan.fr/notice/4014/" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>太陽幾乎只是一點純橘紅，倒影卻是垂直、斷續的筆觸，不是平滑的鏡子。畫水光時，讓倒影比實景更「碎」。</li>
+            <li>港口輪廓只用藍灰輕輕提示，形體讓位給氣氛。很適合〈朝陽〉裡山稜被光吞沒的那一刻。</li>
+            <li>大面積冷綠藍的霧，對上一小點暖橙，補色不必對等。暖色面積雖小，仍會成為視覺中心。</li>
+            <li>近景小船提供尺度。你的飛鳥也可以扮演這種「小小的、卻能穩住空間」的角色。</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card" id="work-norham">
+        <button class="imgwrap" type="button" data-lb="images/turner-norham-castle-sunrise.jpg" data-cap="J. M. W. 泰納《諾罕城堡的日出》，約 1845，泰特美術館 N01981。照片：Sailko，CC BY 3.0（本頁已裁去畫框）；畫作本身為公有領域。">
+          <img src="images/turner-norham-castle-sunrise.jpg" alt="泰納《諾罕城堡的日出》：金白晨光中，城堡溶成藍紫色塊，倒映在水面上" width="1600" height="1208">
+          <span class="badge">已嵌入　CC BY 3.0</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">〈朝陽〉參考</p>
+          <h3>〈諾罕城堡的日出〉</h3>
+          <p class="orig">Norham Castle, Sunrise</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>約瑟夫·馬洛德·威廉·泰納（J. M. W. Turner，1775–1851）</dd></div>
+            <div><dt>年代</dt><dd>約 1845 年</dd></div>
+            <div><dt>媒材</dt><dd>油彩、畫布。尺寸待查證（館方頁面本次未能讀到數字，請以 Tate 頁面為準）</dd></div>
+            <div><dt>館藏</dt><dd>泰特美術館（Tate），編號 N01981；Turner Bequest</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：Wikimedia Commons 檔案由 Sailko 拍攝，授權為 CC BY 3.0；畫作本身已屬公有領域。本頁裁去畫框，僅顯示畫面。此為展覽現場照片，色彩可能與圖錄略有差異，請對照館方頁面。</p>
+          <p class="uncertain">待查證：畫布尺寸（請以 Tate 館方頁面為準）。</p>
+          <a class="btn" href="https://www.tate.org.uk/art/artworks/turner-norham-castle-sunrise-n01981" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>城堡幾乎溶進晨霧，只留下藍紫塊面，示範「光比建物更重要」。畫山稜朝陽時，也可以先畫光，再讓形體從光裡長出來。</li>
+            <li>天空與水面是同一片金白的延續，地平線被削弱。讓光從天上「流」到地面，比先畫一條清楚的山線更接近這張的感覺。</li>
+            <li>筆觸鬆、邊緣虛。壓克力可用薄塗、留白和層層罩染，不必先畫清楚再加光。</li>
+            <li>畫面中的牛與倒影只是尺度點。你的飛鳥若要出現，也可以同樣輕，不要變成主題。</li>
+          </ol>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="theme" id="water">
+  <div class="wrap">
+    <header class="theme-head">
+      <p class="eyebrow">主題二</p>
+      <h2>〈流水〉</h2>
+      <p class="work-desc">往返途中的河與水光，就像每個生命都不一樣。</p>
+      <p class="note">三件作品分別看待水的三種個性：驟雨裡的河、急湍的速度，以及池面上用短筆堆出來的光。重點不是把水畫「像」，而是讓每一片波光都有一點差別。</p>
+    </header>
+    <div class="grid standard">
+
+      <article class="card" id="work-sudden-shower">
+        <button class="imgwrap" type="button" data-lb="images/hiroshige-sudden-shower.jpg" data-cap="歌川廣重《大橋安宅驟雨》，1857，紐約大都會藝術博物館 JP2522。影像：The Met Open Access，CC0。">
+          <img src="images/hiroshige-sudden-shower.jpg" alt="廣重《大橋安宅驟雨》：密雨斜打，行人撐傘走過木橋，河面成片青灰" width="1098" height="1600">
+          <span class="badge">已嵌入　CC0</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">〈流水〉參考</p>
+          <h3>〈大橋安宅驟雨〉</h3>
+          <p class="orig">Sudden Shower over Shin-Ōhashi Bridge and Atake (Ōhashi Atake no yūdachi / 大はしあたけの夕立), from the series One Hundred Famous Views of Edo (Meisho Edo hyakkei / 名所江戸百景)</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>歌川廣重（Utagawa Hiroshige，1797–1858）</dd></div>
+            <div><dt>年代</dt><dd>1857 年</dd></div>
+            <div><dt>媒材</dt><dd>浮世繪木刻版畫；紙本墨色設色。此件印象約 34 × 24.1 cm</dd></div>
+            <div><dt>館藏</dt><dd>紐約大都會藝術博物館，編號 JP2522</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：The Met Open Access，CC0。</p>
+          <a class="btn" href="https://www.metmuseum.org/art/collection/search/55433" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>密密的斜線把天空、河面和橋連成同一個節奏，畫的是「途中的天氣」，不是晴天明信片。</li>
+            <li>橋的弧線對上河面的水平線，人物與傘的傾斜造成行進感，很接近往返教室時的移動。</li>
+            <li>水色有分層：橋下較深、遠岸較淺。只用有限的藍綠，也能拉開空間。</li>
+            <li>人物極小，仍讀得出方向。飛鳥或倒影也可以用同樣「小而清楚」的方法處理。</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card" id="work-kajikazawa">
+        <button class="imgwrap" type="button" data-lb="images/hokusai-kajikazawa.jpg" data-cap="葛飾北齋《甲州石班澤》，約 1830–32，紐約大都會藝術博物館 JP2581。影像：The Met Open Access，CC0。">
+          <img src="images/hokusai-kajikazawa.jpg" alt="葛飾北齋《甲州石班澤》：漁夫站在岩上，急流翻白，遠方淡淡的富士山" width="1600" height="1061">
+          <span class="badge">已嵌入　CC0</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">〈流水〉參考</p>
+          <h3>〈甲州石班澤〉</h3>
+          <p class="orig">Kajikazawa in Kai Province (Kōshū Kajikazawa), from the series Thirty-six Views of Mount Fuji (Fugaku sanjūrokkei)</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>葛飾北齋（Katsushika Hokusai，1760–1849）</dd></div>
+            <div><dt>年代</dt><dd>約 1830–32 年</dd></div>
+            <div><dt>媒材</dt><dd>浮世繪木刻版畫；紙本墨色設色。此件印象約 25.4 × 38.4 cm</dd></div>
+            <div><dt>館藏</dt><dd>紐約大都會藝術博物館，編號 JP2581</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：The Met Open Access，CC0。</p>
+          <a class="btn" href="https://www.metmuseum.org/art/collection/search/56727" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>河水用弧線與飛白表現速度，不是塗滿的藍。壓克力可用較乾的筆刮出浪脊，讓紙或底色透出來。</li>
+            <li>漁夫與岩石的三角形穩住了翻騰的水，示範動與靜的平衡。</li>
+            <li>遠景富士幾乎只用淡藍，水才是主角。〈流水〉也可以讓水光壓過岸景。</li>
+            <li>同一套《富嶽三十六景》裡，北齋既畫靜的赤富士，也畫動的急湍。你的六幅裡，也可以有一張特別「流動」。</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card" id="work-footbridge">
+        <button class="imgwrap" type="button" data-lb="images/monet-japanese-footbridge.jpg" data-cap="克勞德·莫內《日本橋》，1899，美國國家藝廊 1992.9.1。影像：NGA Open Access，CC0。">
+          <img src="images/monet-japanese-footbridge.jpg" alt="莫內《日本橋》：綠色拱橋橫跨睡蓮池，水面由許多短筆的色彩並置而成" width="1600" height="1290">
+          <span class="badge">已嵌入　CC0</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">〈流水〉參考</p>
+          <h3>〈日本橋〉</h3>
+          <p class="orig">The Japanese Footbridge</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>克勞德·莫內（Claude Monet，1840–1926）</dd></div>
+            <div><dt>年代</dt><dd>1899 年</dd></div>
+            <div><dt>媒材</dt><dd>油彩、畫布，81.3 × 101.6 cm</dd></div>
+            <div><dt>館藏</dt><dd>美國國家藝廊（National Gallery of Art, Washington），編號 1992.9.1</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：National Gallery of Art Open Access，CC0，經 Wikimedia Commons 取得（File:Claude Monet, The Japanese Footbridge, 1899, NGA 74796.jpg）。</p>
+          <a class="btn" href="https://www.nga.gov/artworks/74796-japanese-footbridge" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>水面是無數短筆的色彩並置：綠、紫、粉、黃在遠處才混成「水」。近看是筆，遠看是光。壓克力不要先把水面調成單一湖綠。</li>
+            <li>橋的弧線穩住構圖。倒影不必對稱複製，略加錯位更像有風的水面。</li>
+            <li>睡蓮葉是平面色塊，既打斷縱深，也讓水面變成圖案。反覆又不完全相同的葉或波光，正好呼應「每個生命都不一樣」。</li>
+            <li>橋下的暗與葉上的亮要一起看。畫水時先決定最深與最亮，中間的顏色才有地方放。</li>
+          </ol>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="theme" id="color">
+  <div class="wrap">
+    <header class="theme-head">
+      <p class="eyebrow">主題三</p>
+      <h2>〈原彩〉</h2>
+      <p class="work-desc">土地、山林與原住民色彩交織，蝶影穿梭，溫暖而有生命力。</p>
+      <p class="note">這裡收了三件不同性質的參考：梵谷的麥田示範土地的熱度與筆觸節奏（那是普羅旺斯，不是台灣）；陳澄波的淡水風景是台灣土地與聚落色彩的前輩先例；廖繼春的庭院則以強烈色面捕捉亞熱帶的光。後兩件在本頁只提供館方入口，不嵌入圖片。</p>
+    </header>
+    <div class="callout">
+      <h3>關於原住民色彩：觀看，不複製圖紋</h3>
+      <p>原住民的織品、珠飾與器物，有自己的脈絡、家族與祭儀意義，不能被漢人畫家的風景或歐洲作品「代表」。若要觀察色彩比例與節奏，請到官方博物館的典藏或展覽頁面觀看，只學習顏色的冷暖與疏密，不要把具有文化意義的圖紋直接畫進自己的作品。</p>
+      <p>
+        建議入口：
+        <a href="https://www.nmp.gov.tw/" target="_blank" rel="noopener">國立臺灣史前文化博物館</a>、
+        <a href="https://www.museum.org.tw/" target="_blank" rel="noopener">順益台灣原住民博物館</a>。
+        本頁不下載、不轉貼其文物圖片。
+      </p>
+    </div>
+    <div class="grid standard">
+
+      <article class="card" id="work-wheat-cypresses">
+        <button class="imgwrap" type="button" data-lb="images/vangogh-wheat-field-cypresses.jpg" data-cap="文森·梵谷《麥田與絲柏》，1889，紐約大都會藝術博物館 1993.132。影像：The Met Open Access，CC0。">
+          <img src="images/vangogh-wheat-field-cypresses.jpg" alt="梵谷《麥田與絲柏》：金黃麥田、深綠色的絲柏與捲動的藍白雲層" width="1600" height="1274">
+          <span class="badge">已嵌入　CC0</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">〈原彩〉參考</p>
+          <h3>〈麥田與絲柏〉</h3>
+          <p class="orig">Wheat Field with Cypresses</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>文森·梵谷（Vincent van Gogh，1853–1890）</dd></div>
+            <div><dt>年代</dt><dd>1889 年</dd></div>
+            <div><dt>媒材</dt><dd>油彩、畫布，73.2 × 93.4 cm</dd></div>
+            <div><dt>館藏</dt><dd>紐約大都會藝術博物館，編號 1993.132</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：The Met Open Access，CC0。</p>
+          <a class="btn" href="https://www.metmuseum.org/art/collection/search/436535" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>麥田的黃、絲柏的深綠、天空的藍白捲曲，三種節奏並置，土地因此顯得有溫度。先分開這三種筆觸方向，再讓它們相遇。</li>
+            <li>筆觸跟隨物象：麥子用短促的橫斜線，樹用向上旋轉的長筆。壓克力可先鋪色塊，再加有方向的筆。</li>
+            <li>這是法國南部的田野，不是台灣原住民地區的描繪。請只借用色彩力度與節奏，不要把異地風景當成台灣來用。</li>
+            <li>雲與麥田的動勢，可以轉化為蝶影穿過山林時的「氣」，讓暖色地表活起來，而不必畫滿很多蝴蝶。</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card" id="work-chen-tamsui">
+        <div class="noimg">
+          <span class="badge linkonly">不嵌入圖片　館方影像需授權</span>
+          <p>陳澄波於 1947 年辭世，畫作本身的著作權保護期已屆滿。國立臺灣美術館標示本件影像「可授權營利使用」，代表使用館方圖片需另行取得授權。本頁因此不複製、不嵌入館方圖像，請直接在官方典藏頁觀看。</p>
+        </div>
+        <div class="body">
+          <p class="theme-tag">〈原彩〉參考</p>
+          <h3>〈淡水風景（淡水）〉</h3>
+          <p class="orig">Tamsui Landscape (Tamsui)</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>陳澄波（CHEN Cheng-Po，1895–1947）</dd></div>
+            <div><dt>年代</dt><dd>1935 年</dd></div>
+            <div><dt>媒材</dt><dd>油彩、畫布，91 × 117 cm</dd></div>
+            <div><dt>館藏</dt><dd>國立臺灣美術館，登錄號 07800216（2015 年指定為重要古物）</dd></div>
+          </dl>
+          <p class="license">本頁不嵌入圖片。請以國美館典藏頁為準。</p>
+          <a class="btn ghost" href="https://ntmofa-collections.ntmofa.gov.tw/GalData.aspx?RNO=MQM6MZMLMAMAMHMY" target="_blank" rel="noopener">開啟國美館典藏頁</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>館方說明指出，這張以俯瞰構圖，用蜿蜒小路集中視線，兩側屋宇與環山層層後退。先看路怎麼把山和聚落串起來，再看顏色。</li>
+            <li>注意紅瓦、土色牆與綠色山坡的對比。亞熱帶的「原彩」往往來自建材與植被，不必堆砌符號。</li>
+            <li>此作是淡水山城與港街，不是原住民主題畫。請把它當作台灣土地色彩的前輩先例，而不是原住民文化的代替品。</li>
+            <li>街道上的人物很小，生活氣息卻清楚，可以和「生活即美育」對話：人在風景裡，不必很大。</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card" id="work-liao-banana">
+        <div class="noimg">
+          <span class="badge linkonly">不嵌入圖片　仍有著作權</span>
+          <p>廖繼春於 1976 年辭世。依臺灣「死後 50 年」（至 2026 年 12 月 31 日屆滿）與許多國家採用的「死後 70 年」計算，本頁建置時（2026 年 11 月）本件仍在著作權保護期間。本頁不嵌入、不下載原作圖片。</p>
+        </div>
+        <div class="body">
+          <p class="theme-tag">〈原彩〉參考</p>
+          <h3>〈有香蕉樹的院子〉</h3>
+          <p class="orig">Courtyard with Banana Trees</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>廖繼春（1902–1976）</dd></div>
+            <div><dt>年代</dt><dd>1928 年</dd></div>
+            <div><dt>媒材</dt><dd>油彩、畫布。尺寸待查證</dd></div>
+            <div><dt>館藏</dt><dd>臺北市立美術館。本頁未能找到單件作品的穩定網址，館方《典藏選粹》將此作列為典藏精選</dd></div>
+          </dl>
+          <p class="uncertain">待查證：準確尺寸，以及單件作品的館方網址（目前連到《典藏選粹》與典藏查詢頁）。</p>
+          <a class="btn ghost" href="https://www.tfam.museum/Common/editor.aspx?ddlLang=zh-tw&amp;id=159" target="_blank" rel="noopener">開啟北美館《典藏選粹》</a>
+          <a class="btn ghost" href="https://www.tfam.museum/Collection/Collection.aspx?ddlLang=zh-tw" target="_blank" rel="noopener">開啟北美館典藏查詢</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>請在館方頁面觀看原作色彩，不要使用來路不明的複製圖。重點是熱帶庭院裡黃綠、土紅與陰影如何用大膽色面建立氣候。</li>
+            <li>葉隙間落下的光，顏色可以比「眼睛以為的真實」更飽和。這對〈原彩〉要的生命力很有用。</li>
+            <li>課堂上請以館方頁面或合法授權教材為準，不要把網路縮圖投影成「原作」。</li>
+            <li>觀看時可問自己：哪些顏色是土地的，哪些是植物的，哪些是陰影裡的互補色？再轉回自己的山林與蝶影。</li>
+          </ol>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="theme" id="trees">
+  <div class="wrap">
+    <header class="theme-head">
+      <p class="eyebrow">主題四</p>
+      <h2>〈樹影〉</h2>
+      <p class="work-desc">停下腳步時的光影斑駁，萬物歇息，是日常裡安靜的感動。</p>
+      <p class="note">三件作品提供三種「停下來看樹」的方法：克里姆特把樹幹編成織品般的節奏，柯洛用大塊樹冠抓住戶外的光，梵谷把視點放到林下，讓地面自己發亮。</p>
+    </header>
+    <div class="grid standard">
+
+      <article class="card" id="work-klimt">
+        <button class="imgwrap" type="button" data-lb="images/klimt-beech-grove-i.jpg" data-cap="古斯塔夫·克里姆特《山毛櫸林 I》，約 1902，德勒斯登新大師畫廊，Gal.-Nr. 2479 A。影像：Wikimedia Commons / Google Arts &amp; Culture，公有領域。">
+          <img src="images/klimt-beech-grove-i.jpg" alt="克里姆特《山毛櫸林 I》：直立的樹幹如經線，地面鋪滿暖色落葉與光點" width="1600" height="1588">
+          <span class="badge">已嵌入　公有領域</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">〈樹影〉參考</p>
+          <h3>〈山毛櫸林 I〉</h3>
+          <p class="orig">Buchenwald I / Beech Grove I</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>古斯塔夫·克里姆特（Gustav Klimt，1862–1918）</dd></div>
+            <div><dt>年代</dt><dd>約 1902 年（館方作「Um 1902」）</dd></div>
+            <div><dt>媒材</dt><dd>油彩、畫布，100 × 100 cm</dd></div>
+            <div><dt>館藏</dt><dd>德勒斯登國家藝術收藏新大師畫廊（Galerie Neue Meister, Staatliche Kunstsammlungen Dresden），Albertinum，編號 Gal.-Nr. 2479 A</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：Wikimedia Commons 公有領域複製圖（File:Gustav Klimt - Beech Grove I - Google Art Project.jpg），來自 Google Arts &amp; Culture。</p>
+          <a class="btn" href="https://skd-online-collection.skd.museum/Details/Index/246365" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>樹幹幾乎平行直立，像織品的經線；落葉地面是密佈的暖色短筆。停下腳步時，常常先看到這種重複的節奏，而不是一棵「完整的樹」。</li>
+            <li>天空被壓成上緣一窄條，構圖接近正方形。你的 70 × 90 cm 也可以讓樹幹接近滿幅，少留天空。</li>
+            <li>館方說明提到，畫面中的樹也可能包含樺樹與白楊，不要只根據標題去「畫山毛櫸」。重點是樹幹上的深淺斑塊，以及地面的光點。</li>
+            <li>壓克力可先鋪地面的暖色地毯，再畫深淺交錯的樹幹，最後用較乾的筆點出葉隙光。</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card" id="work-corot">
+        <button class="imgwrap" type="button" data-lb="images/corot-fontainebleau-oaks.jpg" data-cap="卡米耶·柯洛《楓丹白露：巴斯－布雷奧的橡樹》，1832 或 1833，紐約大都會藝術博物館 1979.404。影像：The Met Open Access，CC0。">
+          <img src="images/corot-fontainebleau-oaks.jpg" alt="柯洛《楓丹白露：巴斯－布雷奧的橡樹》：大塊樹冠立在土石坡地上，一小片藍天托住綠色" width="1600" height="1284">
+          <span class="badge">已嵌入　CC0</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">〈樹影〉參考</p>
+          <h3>〈楓丹白露：巴斯－布雷奧的橡樹〉</h3>
+          <p class="orig">Fontainebleau: Oak Trees at Bas-Bréau</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>卡米耶·柯洛（Camille Corot，1796–1875）</dd></div>
+            <div><dt>年代</dt><dd>1832 或 1833 年</dd></div>
+            <div><dt>媒材</dt><dd>油彩畫於紙上，再裱於木板，39.7 × 49.5 cm</dd></div>
+            <div><dt>館藏</dt><dd>紐約大都會藝術博物館，編號 1979.404</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：The Met Open Access，CC0。</p>
+          <a class="btn" href="https://www.metmuseum.org/art/collection/search/435970" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>樹冠是大塊的綠，不是一片一片的葉子。光落在地面與樹幹上，樹才站得住。</li>
+            <li>泥土與石頭用灰褐、淡赭薄塗，留下呼吸感，很適合表現歇息時的安靜。</li>
+            <li>這是帶有戶外寫生感的小幅作品。壓克力也可先快速抓住明暗，不要一開始就雕細節。</li>
+            <li>藍天面積不大，卻把整片綠托起來。補色不必對等，一小塊相對的冷色就夠。</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card" id="work-undergrowth">
+        <button class="imgwrap" type="button" data-lb="images/vangogh-undergrowth.jpg" data-cap="文森·梵谷《林下》，1889 年 7 月，梵谷博物館 s0051V1962。影像：Wikimedia Commons / Google Arts &amp; Culture，公有領域。">
+          <img src="images/vangogh-undergrowth.jpg" alt="梵谷《林下》：視點很低，藤蔓包裹的樹幹立在布滿光斑的地面上" width="1600" height="1263">
+          <span class="badge">已嵌入　公有領域</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">〈樹影〉參考</p>
+          <h3>〈林下〉</h3>
+          <p class="orig">Undergrowth / Kreupelhout / Sous-bois</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>文森·梵谷（Vincent van Gogh，1853–1890）</dd></div>
+            <div><dt>年代</dt><dd>1889 年 7 月，聖雷米（Saint-Rémy-de-Provence）</dd></div>
+            <div><dt>媒材</dt><dd>油彩、畫布，73 × 92.3 cm</dd></div>
+            <div><dt>館藏</dt><dd>阿姆斯特丹梵谷博物館（Van Gogh Museum），編號 s0051V1962（永久借展）</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：Wikimedia Commons 公有領域複製圖（File:Vincent van Gogh - Undergrowth - Google Art Project.jpg），來自 Google Arts &amp; Culture。</p>
+          <a class="btn" href="https://www.vangoghmuseum.nl/en/collection/s0051V1962" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>視點很低，幾乎沒有天空，就像人走在林下。這正是「停下腳步」時的高度。</li>
+            <li>樹幹被藤蔓包裹，地面用碎筆點成光斑：黃綠與藍綠交替，比平塗的影子更閃爍。</li>
+            <li>樹幹左右傾斜、前後交錯，安靜卻不是死寂。讓樹有姿勢，光斑才有地方落。</li>
+            <li>畫斑駁光影時，先決定光斑的方向與密度，再畫草葉，避免每一片都畫得一樣。</li>
+          </ol>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="theme" id="dusk">
+  <div class="wrap">
+    <header class="theme-head">
+      <p class="eyebrow">主題五</p>
+      <h2>〈暮色〉</h2>
+      <p class="work-desc">下課後的黃昏，夕陽染紅天空與山稜，歸鳥成群，一天的光漸漸沉靜。</p>
+      <p class="note">廣重示範黃昏也可以是金灰與剪影，不一定先畫大紅；泰納則把冷暖同時放進同一片暮光。歸鳥是你的主題，可以放在橋與山之間的空帶，不要打斷主要的斜線或光帶。</p>
+    </header>
+    <div class="grid">
+
+      <article class="card" id="work-seta">
+        <button class="imgwrap" type="button" data-lb="images/hiroshige-seta-sunset.jpg" data-cap="歌川廣重《瀬田夕照》，1834–35，紐約大都會藝術博物館 JP2852。影像：The Met Open Access，CC0。">
+          <img src="images/hiroshige-seta-sunset.jpg" alt="廣重《瀬田夕照》：長橋斜向伸入湖面，遠山與帆影在金灰色的黃昏裡" width="1600" height="1088">
+          <span class="badge">已嵌入　CC0</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">〈暮色〉參考</p>
+          <h3>〈瀬田夕照〉</h3>
+          <p class="orig">Sunset Glow at Seta (Seta sekishō), from the series Eight Views of Ōmi Province (Ōmi hakkei / 近江八景)</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>歌川廣重（Utagawa Hiroshige，1797–1858）</dd></div>
+            <div><dt>年代</dt><dd>1834–35 年</dd></div>
+            <div><dt>媒材</dt><dd>浮世繪木刻版畫；紙本墨色設色。此件印象約 24.4 × 37.1 cm</dd></div>
+            <div><dt>館藏</dt><dd>紐約大都會藝術博物館，編號 JP2852</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：The Met Open Access，CC0。此件印象中央可見裱本摺痕，天空色彩較為清淡，請同時以館方頁面理解「夕照」的主題。</p>
+          <a class="btn" href="https://www.metmuseum.org/art/collection/search/57050" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>黃昏不一定靠大紅。這件印象裡，天色偏金黃灰，山稜與橋成為剪影。下課後的天空也可以先從灰金開始。</li>
+            <li>長橋斜向伸入湖面，把近岸、水面與遠山連成一條回家的路。</li>
+            <li>帆船與遠山重複的三角形，節奏平靜，對應「一天的光漸漸沉靜」。</li>
+            <li>歸鳥可放在橋與山之間的空帶，不要切斷長橋的斜線。</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card" id="work-temeraire">
+        <button class="imgwrap" type="button" data-lb="images/turner-fighting-temeraire.jpg" data-cap="J. M. W. 泰納《被拖去解體的戰艦無畏號》，1839，倫敦國家藝廊 NG524。影像：Wikimedia Commons，公有領域。">
+          <img src="images/turner-fighting-temeraire.jpg" alt="泰納《被拖去解體的戰艦無畏號》：右側夕陽把雲與河面燒成金紅，左側船體沉在冷灰藍裡" width="1600" height="1189">
+          <span class="badge">已嵌入　公有領域</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">〈暮色〉參考</p>
+          <h3>〈被拖去解體的戰艦無畏號〉</h3>
+          <p class="orig">The Fighting Temeraire tugged to her last berth to be broken up, 1838</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>約瑟夫·馬洛德·威廉·泰納（J. M. W. Turner，1775–1851）</dd></div>
+            <div><dt>年代</dt><dd>1839 年（官方完整標題中的 1838 是史實年份；館方「Date made」為 1839）</dd></div>
+            <div><dt>媒材</dt><dd>油彩、畫布，90.7 × 121.6 cm</dd></div>
+            <div><dt>館藏</dt><dd>倫敦國家藝廊（The National Gallery, London），編號 NG524；Turner Bequest, 1856</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：Wikimedia Commons 公有領域複製圖（File:The Fighting Temeraire, JMW Turner, National Gallery.jpg）。</p>
+          <a class="btn" href="https://www.nationalgallery.org.uk/paintings/joseph-mallord-william-turner-the-fighting-temeraire" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>右側夕陽把雲與河面燒成金紅，左側船體沉在冷灰藍裡。同一張畫裡同時有「白日將盡」與「夜色湧來」，這對〈暮色〉很有用。</li>
+            <li>光的中心不必放在正中央。夕陽偏右，視線沿著水面斜向走。</li>
+            <li>倒影垂直而柔，邊緣融化。壓克力可用薄色向下拉，不要把水線勾死。</li>
+            <li>此作主題是戰艦被拖去解體，情感比你的〈暮色〉沉重。請只借用暮光與水天，不必借用這段歷史敘事。</li>
+          </ol>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="theme" id="stars">
+  <div class="wrap">
+    <header class="theme-head">
+      <p class="eyebrow">主題六</p>
+      <h2>〈星空〉</h2>
+      <p class="work-desc">夜裡的歸途，繁星滿天，鳥與蝶都已入夢，與〈朝陽〉首尾呼應。</p>
+      <p class="note">梵谷的兩張星夜是不同的路：一張讓天空旋轉，一張讓河面拉出燈與星的倒影。弗里德里希則把夜畫得很克制，月亮幾乎藏在雲後。先看這三張，再去下面的橄欖樹比較，會更清楚梵谷如何把晝夜當成一對。</p>
+    </header>
+    <div class="grid standard">
+
+      <article class="card" id="work-starry-night">
+        <button class="imgwrap" type="button" data-lb="images/vangogh-starry-night.jpg" data-cap="文森·梵谷《星夜》，1889，紐約現代藝術博物館。影像：Wikimedia Commons / Google Arts &amp; Culture，公有領域。">
+          <img src="images/vangogh-starry-night.jpg" alt="梵谷《星夜》：旋轉的藍夜空、發光的星月，以及左側像火焰般向上的絲柏" width="1600" height="1267">
+          <span class="badge">已嵌入　公有領域</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">〈星空〉參考</p>
+          <h3>〈星夜〉</h3>
+          <p class="orig">The Starry Night / De sterrennacht</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>文森·梵谷（Vincent van Gogh，1853–1890）</dd></div>
+            <div><dt>年代</dt><dd>1889 年</dd></div>
+            <div><dt>媒材</dt><dd>油彩、畫布，73.7 × 92.1 cm</dd></div>
+            <div><dt>館藏</dt><dd>紐約現代藝術博物館（The Museum of Modern Art）</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：Wikimedia Commons 公有領域複製圖（File:Van Gogh - Starry Night - Google Art Project.jpg），來自 Google Arts &amp; Culture。尺寸採館方與通行著錄常見數字；細節請以 MoMA 頁面為準。</p>
+          <a class="btn" href="https://www.moma.org/collection/works/79802" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>天空是旋轉的筆觸，不是點出來的洞。星與月有層層擴散的光暈，壓克力可用同心短筆一圈圈堆上去。</li>
+            <li>左側絲柏像火焰向上，把地面接到天空。若要與〈朝陽〉首尾呼應，也可以安排一道垂直的「連接物」：樹、山稜，或一道飛行的軌跡。</li>
+            <li>村落的燈是安定的小黃點，和天空的動形成對比。夜路也可以同時有「動的天」與「靜的地」。</li>
+            <li>梵谷在信中把橄欖樹與星夜當成一對晝夜作品。看完下面的〈橄欖樹比較〉再回到這張，會更清楚他如何誇張輪廓與節奏。</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card" id="work-rhone">
+        <button class="imgwrap" type="button" data-lb="images/vangogh-starry-night-rhone.jpg" data-cap="文森·梵谷《隆河上的星夜》，1888，奧塞美術館 RF 1975 19。影像：Wikimedia Commons / Google Arts &amp; Culture，公有領域。">
+          <img src="images/vangogh-starry-night-rhone.jpg" alt="梵谷《隆河上的星夜》：深藍夜空中的星，以及河面上被拉長的金色燈光倒影" width="1600" height="1236">
+          <span class="badge">已嵌入　公有領域</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">〈星空〉參考</p>
+          <h3>〈隆河上的星夜〉</h3>
+          <p class="orig">Starry Night Over the Rhône / La Nuit étoilée</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>文森·梵谷（Vincent van Gogh，1853–1890）</dd></div>
+            <div><dt>年代</dt><dd>1888 年</dd></div>
+            <div><dt>媒材</dt><dd>油彩、畫布，約 73 × 92 cm（請以奧塞美術館頁面為準）</dd></div>
+            <div><dt>館藏</dt><dd>巴黎奧塞美術館（Musée d’Orsay），編號 RF 1975 19</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：Wikimedia Commons 公有領域複製圖（File:Vincent van Gogh - Starry Night - Google Art Project.jpg；此檔雖檔名作 Starry Night，Wikidata 與檔案說明對應的是《隆河上的星夜》）。法文館方標題也是 La Nuit étoilée，請勿與 MoMA 的《星夜》混淆。</p>
+          <a class="btn" href="https://www.musee-orsay.fr/en/artworks/la-nuit-etoilee-78696" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>星是點狀爆發的光，河面拉出長長的金色倒影，示範「夜裡的水光」。若〈星空〉要呼應〈流水〉，這張比 MoMA《星夜》更直接。</li>
+            <li>天空由深藍走到近地平線的偏暖，有空氣，不是一塊死黑。</li>
+            <li>岸邊街燈與星光是兩種黃：一種偏暖，一種偏冷。不要調成同一色再點上去。</li>
+            <li>前景人物只是剪影，不搶星空。鳥與蝶既已入夢，也可以只留極少痕跡，或把夜空完全留給光。</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card" id="work-friedrich">
+        <button class="imgwrap" type="button" data-lb="images/friedrich-moonrise-over-the-sea.jpg" data-cap="卡斯帕·大衛·弗里德里希《海上明月》，1822，柏林舊國家美術館，W.S. 53。影像：Wikimedia Commons / Google Arts &amp; Culture，公有領域。">
+          <img src="images/friedrich-moonrise-over-the-sea.jpg" alt="弗里德里希《海上明月》：三人坐在岸邊礁石上，月亮藏在雲後，海面橫過一道亮光" width="1600" height="1224">
+          <span class="badge">已嵌入　公有領域</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">〈星空〉參考</p>
+          <h3>〈海上明月〉</h3>
+          <p class="orig">Mondaufgang am Meer / Moonrise over the Sea</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>卡斯帕·大衛·弗里德里希（Caspar David Friedrich，1774–1840）</dd></div>
+            <div><dt>年代</dt><dd>1822 年</dd></div>
+            <div><dt>媒材</dt><dd>油彩、畫布，55 × 71 cm</dd></div>
+            <div><dt>館藏</dt><dd>柏林國家博物館舊國家美術館（Alte Nationalgalerie, Staatliche Museen zu Berlin），編號 W.S. 53</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：Wikimedia Commons 公有領域複製圖（File:Caspar David Friedrich - Mondaufgang am Meer - Google Art Project.jpg），來自 Google Arts &amp; Culture。</p>
+          <a class="btn" href="https://search.smb.museum/object/obj-959550" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>月亮幾乎藏在雲後，海面卻有一條明亮的橫光。夜的主角可以是光帶，不一定是一顆畫得很清楚的月亮或星星。</li>
+            <li>三個背對我們的人物提供尺度與靜默，海天的水平線非常安定。</li>
+            <li>前景礁石深暗，把觀看的位置定在岸上，像夜路將盡、停下來看天。</li>
+            <li>色彩克制：褐、藍紫，加上一點金。〈星空〉若要沉靜而非喧鬧，這是和梵谷不同的另一條路。</li>
+          </ol>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="theme" id="olives">
+  <div class="wrap">
+    <header class="theme-head">
+      <p class="eyebrow">專題</p>
+      <h2>梵谷〈橄欖樹〉三個館藏版本比較</h2>
+      <p class="work-desc">1889 年在聖雷米，梵谷反覆畫同一片橄欖園。下面三張都經過館方頁面核對：MoMA 的夏季版本，是他寫信提到、與《星夜》成對的白晝作品；大都會博物館的是同年十一月的果園；明尼阿波利斯美術館的則是帶黃天與太陽、偏秋色的一張。</p>
+      <p class="note">比較時請並排看：天空怎麼畫、樹幹扭轉的強度、土地的冷暖，以及哪一張比較接近你的〈原彩〉或〈星空〉筆觸。三者尺寸都接近 73 × 92 cm，和你的 70 × 90 cm 也很近，方便想像筆觸在畫布上的實際大小。</p>
+    </header>
+    <div class="grid triple compare">
+
+      <article class="card" id="work-olive-moma">
+        <button class="imgwrap" type="button" data-lb="images/vangogh-olive-trees-moma.jpg" data-cap="文森·梵谷《橄欖樹》，1889 年 6–7 月，紐約現代藝術博物館。影像：Wikimedia Commons / Google Arts &amp; Culture，公有領域。">
+          <img src="images/vangogh-olive-trees-moma.jpg" alt="梵谷《橄欖樹》（MoMA）：扭轉的綠樹、深藍山脈與捲動的白雲" width="1600" height="1271">
+          <span class="badge">已嵌入　公有領域</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">夏季　與《星夜》成對</p>
+          <h3>〈橄欖樹〉</h3>
+          <p class="orig">The Olive Trees</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>文森·梵谷（Vincent van Gogh，1853–1890）</dd></div>
+            <div><dt>年代</dt><dd>1889 年 6–7 月，聖雷米</dd></div>
+            <div><dt>媒材</dt><dd>油彩、畫布，72.6 × 91.4 cm</dd></div>
+            <div><dt>館藏</dt><dd>紐約現代藝術博物館；Mrs. John Hay Whitney Bequest</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：Wikimedia Commons 公有領域複製圖（File:Vincent van Gogh - The Olive Trees - Google Art Project.jpg）。</p>
+          <a class="btn" href="https://www.moma.org/collection/works/80013" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>館方援引梵谷的信：他先畫了橄欖樹，也畫了新的星空習作，並把帶白雲與群山的橄欖樹，視為《星夜》的白晝對應。輪廓被有意加強，接近舊木刻的感覺。</li>
+            <li>地面像被看不見的水流劃過，樹身扭轉，山脈也在起伏。這是三張裡「節奏最強」的一張，適合對照〈星空〉的旋轉筆觸。</li>
+            <li>顏色偏藍綠與冷白，是夏季午後的光，不是秋季的金黃。</li>
+            <li>壓克力若要讓〈原彩〉與〈星空〉說同一種語言，可以借用這裡的輪廓強度，而不是只借用星點。</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card" id="work-olive-met">
+        <button class="imgwrap" type="button" data-lb="images/vangogh-olive-trees-met.jpg" data-cap="文森·梵谷《橄欖樹》，1889 年，紐約大都會藝術博物館 1998.325.1。影像：The Met Open Access，CC0。">
+          <img src="images/vangogh-olive-trees-met.jpg" alt="梵谷《橄欖樹》（大都會）：點描般的天空、成排的橄欖樹與帶紫色陰影的土壤" width="1600" height="1276">
+          <span class="badge">已嵌入　CC0</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">十一月　土壤與點描</p>
+          <h3>〈橄欖樹〉</h3>
+          <p class="orig">Olive Trees</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>文森·梵谷（Vincent van Gogh，1853–1890）</dd></div>
+            <div><dt>年代</dt><dd>1889 年（館方說明：同年十一月五張橄欖園之一）</dd></div>
+            <div><dt>媒材</dt><dd>油彩、畫布，72.7 × 92.1 cm</dd></div>
+            <div><dt>館藏</dt><dd>紐約大都會藝術博物館，編號 1998.325.1</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：The Met Open Access，CC0。</p>
+          <a class="btn" href="https://www.metmuseum.org/art/collection/search/437998" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>館方指出，此作直接面對自然，卻用接近秀拉的點描與斷續的色彩。天空不是旋轉的大筆，而是密密的小點與短線。</li>
+            <li>梵谷自己說，比起高更與貝爾納的抽象，他所做的是較粗糙的寫實，卻帶著鄉土氣味，能「聞到土壤」。看地面的赭與紫，比看樹冠更重要。</li>
+            <li>樹排成橫列，空間比較穩定，扭轉也比 MoMA 那張收斂。適合作為「土地如何鋪色」的練習。</li>
+            <li>若〈原彩〉需要溫暖但不喧鬧，可參考這裡的土壤色，而不是把整張畫推向高彩度。</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="card" id="work-olive-mia">
+        <button class="imgwrap" type="button" data-lb="images/vangogh-olive-trees-mia.jpg" data-cap="文森·梵谷《橄欖樹》，1889 年，明尼阿波利斯美術館 51.7。影像：館方標示 Public Domain。">
+          <img src="images/vangogh-olive-trees-mia.jpg" alt="梵谷《橄欖樹》（明尼阿波利斯）：黃天中央有一輪太陽，橙褐土地與扭轉的橄欖樹通向遠山" width="1600" height="1271">
+          <span class="badge">已嵌入　公有領域</span>
+        </button>
+        <div class="body">
+          <p class="theme-tag">秋色　黃天與太陽</p>
+          <h3>〈橄欖樹〉</h3>
+          <p class="orig">Olive Trees（通行別名 Olive Trees with Yellow Sky and Sun）</p>
+          <dl class="facts">
+            <div><dt>作者</dt><dd>文森·梵谷（Vincent van Gogh，1853–1890）</dd></div>
+            <div><dt>年代</dt><dd>1889 年</dd></div>
+            <div><dt>媒材</dt><dd>油彩、畫布，73.66 × 92.71 cm</dd></div>
+            <div><dt>館藏</dt><dd>明尼阿波利斯美術館（Minneapolis Institute of Art），編號 51.7；The William Hood Dunwoody Fund</dd></div>
+          </dl>
+          <p class="license">影像來源與授權：館方標示 Public Domain、影像可完整顯示。本頁取自美術館公開影像並縮成約 1600 像素。</p>
+          <a class="btn" href="https://collections.artsmia.org/art/1218/" target="_blank" rel="noopener">開啟館方觀看頁面</a>
+          <h4>繪畫觀察重點</h4>
+          <ol class="tips">
+            <li>館方說明：鮮亮的橙與黃，顯示此作可能畫於秋季。太陽清楚地放在黃天中央，和 MoMA 那張只有白雲、大都會那張沒有明顯太陽，都不一樣。</li>
+            <li>土地與樹幹都被暖色包住，遠山卻仍是冷青。冷暖交會的位置，決定畫面是否「透氣」。</li>
+            <li>兩側的樹向中間讓出一條路，把視線送向太陽與山。這是三張裡空間最像「可以走進去」的一張。</li>
+            <li>觀察陰影的方向與太陽的位置是否完全一致。不必先下結論，只要在畫〈朝陽〉或〈原彩〉時，養成核對光源的習慣。</li>
+          </ol>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="theme" id="copyright">
+  <div class="wrap prose">
+    <header class="theme-head">
+      <p class="eyebrow">使用說明</p>
+      <h2>著作權與來源查證提醒</h2>
+    </header>
+    <h3>本頁怎樣決定要不要放圖片</h3>
+    <ul>
+      <li>只嵌入可以確認為公有領域，或由館方以 CC0、CC BY 等開放授權提供的圖像。</li>
+      <li>作者去世未滿較長保護期（本頁從嚴，同時考慮死後 70 年，以及臺灣的死後 50 年），或影像授權不明的，一律不放圖，只保留館方觀看入口。</li>
+      <li>陳澄波的畫作本身保護期已屆滿，但國美館標示影像「可授權營利使用」。未經授權，本頁不複製館方圖片。</li>
+      <li>廖繼春於 1976 年辭世，至 2026 年 11 月仍在著作權保護期間，本頁不嵌入其作品圖片。</li>
+      <li>原住民文物與織品有文化與權利上的考量，本頁只提供官方博物館入口，不轉載其圖像，也不鼓勵複製祭儀或家族圖紋。</li>
+    </ul>
+    <h3>來源是如何查證的</h3>
+    <ul>
+      <li>每一件作品的作者、標題、年代、媒材與館藏，都對過館方頁面，或 Wikimedia Commons／館方開放資料。無法在館方頁面確認的欄位，會寫「待查證」，不會編造。</li>
+      <li>人工智慧或二手講義有時會寫出不存在的作品名、錯誤的館藏或年份。把本頁的資料貼到別的工具裡使用時，仍請以館方連結為準。</li>
+      <li>同一件版畫常有多個「印象」（不同印次、不同館藏）。本頁若嵌入圖片，會註明所使用的館藏編號，避免把不同印象混為一談。</li>
+      <li>泰納《諾罕城堡的日出》使用的是展覽現場拍攝、授權為 CC BY 3.0 的照片，並已裁去畫框；色彩可能與圖錄不同，請對照 Tate 頁面。</li>
+    </ul>
+    <h3>課堂與創作時請這樣用</h3>
+    <ul>
+      <li>已嵌入的圖片檔在網站的 <code>images/</code> 資料夾裡，暫時沒有網路時，仍可看這些圖。館方連結則需要連網；上課或開講前，請先點一次確認頁面打得開。</li>
+      <li>本頁是教學與個人創作參考，不是對外發表這些名作圖像的授權文件，也不是《蛻變》展覽文宣。若要公開印製、出版或上網轉載，請自行再核對各館的使用條件（尤其是 CC BY 照片的署名）。</li>
+      <li>觀看是為了轉化成自己的壓克力風景，不是為了臨摹成可以亂真的複製品。</li>
+    </ul>
+    <h3>目前標為待查證的項目</h3>
+    <ul>
+      <li>泰納《諾罕城堡的日出》：畫布尺寸。Tate 頁面確認了約 1845 年、油彩畫布與編號 N01981，但本次未能從頁面讀到尺寸數字。</li>
+      <li>廖繼春《有香蕉樹的院子》：準確尺寸，以及單件作品的館方穩定網址。目前可核對的是：1928 年、油彩畫布、臺北市立美術館典藏，並見於該館《典藏選粹》。</li>
+      <li>梵谷《隆河上的星夜》：尺寸在通行著錄中或作 73 × 92 cm，或作 72 × 92.1 cm，請以奧塞美術館頁面為準。</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <p>Akila 阿錡拉　｜　《移動的美術課》藝術史參考　｜　供教學與創作對照，2026 年 11 月建置。</p>
+    <p>圖片權利仍歸各授權所示。本站為靜態頁面，不含額外的外部字型或腳本。資料來源見同資料夾的 <a href="SOURCES.md">SOURCES.md</a>。</p>
+  </div>
+</footer>
+
+<div class="lb" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="作品大圖">
+  <button class="close" type="button" id="lb-close">關閉</button>
+  <img id="lb-img" alt="">
+  <p class="cap" id="lb-cap"></p>
+</div>
+<script>
+(function(){
+  var lb = document.getElementById("lightbox");
+  var img = document.getElementById("lb-img");
+  var cap = document.getElementById("lb-cap");
+  var lastFocus = null;
+  function openLb(src, text, alt){
+    lastFocus = document.activeElement;
+    img.src = src;
+    img.alt = alt || "";
+    cap.textContent = text || "";
+    lb.hidden = false;
+    document.getElementById("lb-close").focus();
+  }
+  function closeLb(){
+    lb.hidden = true;
+    img.removeAttribute("src");
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  document.querySelectorAll(".imgwrap").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var pic = btn.querySelector("img");
+      openLb(btn.getAttribute("data-lb"), btn.getAttribute("data-cap"), pic ? pic.alt : "");
+    });
+  });
+  document.getElementById("lb-close").addEventListener("click", closeLb);
+  lb.addEventListener("click", function(e){ if (e.target === lb) closeLb(); });
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape" && !lb.hidden) closeLb();
+  });
+  var links = Array.prototype.slice.call(document.querySelectorAll("nav a"));
+  var sections = links.map(function(a){ return document.querySelector(a.getAttribute("href")); }).filter(Boolean);
+  function syncNav(){
+    var y = window.scrollY + 80;
+    var current = sections[0];
+    sections.forEach(function(sec){ if (sec.offsetTop <= y) current = sec; });
+    links.forEach(function(a){
+      var on = current && a.getAttribute("href") === "#" + current.id;
+      if (on) a.setAttribute("aria-current", "true");
+      else a.removeAttribute("aria-current");
+    });
+  }
+  window.addEventListener("scroll", syncNav, {passive:true});
+  syncNav();
+})();
+</script>
+</body>
+</html>
