@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="description" content="《移動的美術課》藝術史參考：六個主題的可核對名作、繪畫觀察重點，以及梵谷橄欖樹三館藏版本比較。公有領域與開放授權作品嵌入圖片；仍有著作權者只提供館方連結。">
+<meta name="description" content="《移動的美術課》藝術史參考：六個主題的可核對名作、繪畫觀察重點、梵谷橄欖樹三館藏比較，以及這一系列從構圖到打底的創作過程。公有領域與開放授權作品嵌入圖片；仍有著作權者只提供館方連結。">
 <title>《移動的美術課》藝術史參考｜Akila 阿錡拉</title>
 <style>
 :root{
@@ -216,11 +216,103 @@ footer{
   color:#fff;border-radius:999px;padding:8px 14px;font:700 14px/1 "PingFang TC","Noto Sans TC",sans-serif;cursor:pointer
 }
 .lb .close:hover,.lb .close:focus{background:#fff;color:#111}
+
+/* process section */
+.theme#process{--accent:var(--gold)}
+.process-toc{
+  display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px
+}
+.process-toc a{
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  font-size:13px;font-weight:600;text-decoration:none;
+  color:var(--ink);background:#fff;border:1px solid var(--rule);
+  border-radius:999px;padding:5px 12px
+}
+.process-toc a:hover{border-color:var(--gold);color:var(--gold)}
+.process-block h3{
+  font-size:22px;letter-spacing:.06em;margin:32px 0 10px;max-width:74ch
+}
+.process-block h3:first-child{margin-top:8px}
+.process-block > p, .process-block > ul, .process-block > ol{max-width:74ch}
+.process-block ul, .process-block ol{padding-left:1.2em}
+.process-block li{margin:0 0 8px}
+.imgwrap.wide{aspect-ratio:1830/320;background:#efe6d4}
+.palette-fig{margin:16px 0 22px;max-width:100%}
+.palette-fig figcaption{
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  font-size:13px;color:var(--muted);margin-top:8px;max-width:80ch
+}
+.table-wrap{
+  overflow-x:auto;margin:12px 0 22px;
+  -webkit-overflow-scrolling:touch;
+  border:1px solid var(--rule);border-radius:12px;background:var(--card)
+}
+table.process{
+  width:100%;border-collapse:collapse;font-size:16px;line-height:1.55;min-width:640px
+}
+table.process th, table.process td{
+  border-bottom:1px solid var(--rule);padding:10px 12px;text-align:left;vertical-align:top
+}
+table.process th{
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  font-size:13px;letter-spacing:.04em;background:var(--paper-2);font-weight:700;
+  white-space:nowrap
+}
+table.process tr:last-child td{border-bottom:0}
+table.process .num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.swatch-row{
+  display:grid;gap:12px;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  margin:12px 0 22px
+}
+.swatch{
+  background:var(--card);border:1px solid var(--rule);border-radius:12px;overflow:hidden;min-width:0
+}
+.swatch .chip{
+  height:56px;display:flex;align-items:flex-end;justify-content:flex-end;padding:6px 8px
+}
+.swatch .chip code, .hexpill{
+  font-size:11px;background:rgba(255,252,246,.92);color:var(--ink);
+  padding:1px 6px;border-radius:999px;border:1px solid rgba(0,0,0,.06)
+}
+.swatch .lab{padding:8px 10px 10px}
+.swatch .lab strong{display:block;font-size:15px;line-height:1.35}
+.swatch .lab span{display:block;font-size:13px;color:var(--muted);margin-top:2px}
+.hang{
+  margin:12px 0 8px;padding:14px 14px 8px;
+  background:var(--card);border:1px solid var(--rule);border-radius:12px;
+  overflow-x:auto;-webkit-overflow-scrolling:touch
+}
+.hang svg{display:block;width:100%;min-width:640px;height:auto}
+.hang-caption, .status-date{
+  margin:0 0 22px;color:var(--muted);font-size:14px;max-width:80ch
+}
+.status-list{
+  list-style:none;padding:0;margin:12px 0 10px;max-width:54ch;display:grid;gap:8px
+}
+.status-list li{
+  display:flex;align-items:center;gap:10px;margin:0;
+  background:var(--card);border:1px solid var(--rule);border-radius:12px;padding:10px 12px
+}
+.status{
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  font-size:12px;font-weight:700;letter-spacing:.06em;
+  border-radius:999px;padding:3px 8px;border:1px solid var(--rule);white-space:nowrap
+}
+.status.done{color:var(--ok);background:#eef6f0;border-color:#b9d4c3}
+.status.next{color:var(--warn);background:#fbf0e6;border-color:#e4c8a8}
+.status.wait{color:var(--muted);background:#fff}
+@media (max-width:700px){
+  table.process{min-width:0}
+  table.process th, table.process td{padding:8px}
+}
+
 @media print{
-  .navwrap,.skip,.btn,.lb{display:none!important}
+  .navwrap,.skip,.btn,.lb,.process-toc{display:none!important}
   body{background:#fff;font-size:12pt}
   .card{break-inside:avoid;box-shadow:none}
   .imgwrap{cursor:default}
+  table.process tr, .swatch, .status-list li, .palette-fig{break-inside:avoid}
 }
 </style>
 </head>
@@ -231,7 +323,7 @@ footer{
     <p class="kicker"><span>教學與創作參考</span><span>岡山文化中心聯展《蛻變》</span><span>2026年12月2日－27日</span></p>
     <h1>《移動的美術課》藝術史參考</h1>
     <p class="sub">Akila 阿錡拉　｜　從日出走到星空的六個主題</p>
-    <p class="lede">這組 2026 年的壓克力風景畫，記錄在不同教室之間往返時看見的光與風景，相信「生活即美育」。六幅都是 30 號（70 × 90 cm，不含框），畫中有反覆出現的飛鳥與蝴蝶。本頁為每一主題整理可核對的世界名作，方便上課投影，也方便自己動筆前對照。</p>
+    <p class="lede">這組 2026 年的壓克力風景畫，記錄在不同教室之間往返時看見的光與風景，相信「生活即美育」。六幅都是 30 號（70 × 90 cm，不含框），畫中有反覆出現的飛鳥與蝴蝶。本頁為每一主題整理可核對的世界名作，方便上課投影，也方便自己動筆前對照。頁面最下方另有〈創作過程〉，整理這一系列怎樣被想成同一組，給想學繪畫的人參考。</p>
     <p class="lede">公有領域或明確開放授權的作品，圖片已下載進這個網站，點圖可看大圖。仍有著作權、或館方影像需要另行授權的作品，本頁不放圖片，只提供館方觀看連結。所有作品都經過館方頁面或 Wikimedia Commons 核對；不確定的欄位會標示「待查證」，沒有編造館藏或年代。</p>
     <div class="meta-row">
       <span class="pill">六主題快速切換</span>
@@ -251,6 +343,7 @@ footer{
     <a href="#stars">星空</a>
     <a href="#olives">橄欖樹比較</a>
     <a href="#copyright">著作權</a>
+    <a href="#process">創作過程</a>
   </nav>
 </div>
 <main id="main">
@@ -941,10 +1034,246 @@ footer{
   </div>
 </section>
 
+<section class="theme" id="process">
+  <div class="wrap">
+    <header class="theme-head">
+      <p class="eyebrow">給學畫的人</p>
+      <h2>創作過程：一個系列怎麼想出來</h2>
+      <p class="work-desc">下面整理的是這組《移動的美術課》在動筆前先想清楚的事：六幅為什麼要連成一天、構圖如何共用、顏色怎樣互相接起來。不是標準答案，而是一套可以檢查、也可以修改的想法。</p>
+      <p class="note">說明以文字與色帶示意為主，不放尚未完成的畫作照片。色帶與色塊都是示意，實際調色仍以眼睛看到的為準。</p>
+    </header>
+
+    <nav class="process-toc" aria-label="創作過程小節">
+      <a href="#process-idea">系列理念</a>
+      <a href="#process-composition">三段式構圖</a>
+      <a href="#process-gold">金線與交界色</a>
+      <a href="#process-birds">飛鳥與蝴蝶</a>
+      <a href="#process-underpaint">打底五原則</a>
+      <a href="#process-stars">〈星空〉的發想</a>
+      <a href="#process-hanging">掛展規劃</a>
+      <a href="#process-progress">創作進度</a>
+    </nav>
+
+    <div class="process-block" id="process-idea">
+      <h3>系列理念：移動的美術館</h3>
+      <p>這一系列的核心有兩句話：「移動的美術館」，以及「生活即美育」。老師在不同教室之間往返時看見的光與風景，就是課堂。六幅畫不是六張各畫各的風景，而是同一天的時間軸：從〈朝陽〉走到〈星空〉。掛在牆上時，相鄰兩幅的邊緣還會用交界色互相接起來。觀眾沿著牆走，也就沿著一天走。</p>
+      <p>所以動筆時最重要的，不是先把某一幅畫得很滿，而是先讓六幅看起來像同一組。明暗結構要一樣，金線要落在差不多的高度，暗部和亮部也要有共用的調色習慣。色相可以各自不同，主題也可以各自不同，但「黏」在一起的方法要先定下來。</p>
+      <div class="callout">
+        <h3>關於〈原彩〉的取材</h3>
+        <p>〈原彩〉的顏色與土地感，來自老師曾任教的山區學校一帶。公開說明時只保留這個範圍，不寫出學校或村落的名字。</p>
+        <p>創作時有一個原則：不複製任何族群專屬的圖紋或祭儀符號。若曾向當地朋友請教顏色、植物或生活裡的觀察，會記得感謝，但畫面本身仍是轉化後的風景，不是文化圖樣的抄寫。</p>
+      </div>
+    </div>
+
+    <div class="process-block" id="process-composition">
+      <h3>三段式構圖：六幅共用同一副骨架</h3>
+      <p>六幅都用同一種上下分段。差別主要在顏色與主題，不在結構。這樣掛成一排時，視線會平行地往前走，不會忽然在某一幅「掉下去」或「跳上去」。</p>
+      <ul>
+        <li><strong>上段：霧氣漸層。</strong>色相只做很小的改變，主要靠明暗，再加上一點點冷暖來推進空間。這種處理空氣的方式，感覺接近江賢二的作品——遠看是一整片光，近看仍有溫度的變化。</li>
+        <li><strong>中段：細的幾何形。</strong>用偏普普風格的細線圓形與三角形，當作構圖裡的節奏，而不是故事的主角。它們讓中段有一點當代的平面感，也讓上段的霧氣和下段的剪影中間有過渡。</li>
+        <li><strong>下段：深色的植物剪影。</strong>這是六幅共同的「地面」與重量。剪影要夠暗，畫面才站得住；細節可以留到最後再裝點。</li>
+      </ul>
+      <p>另外還有幾個會反覆出現的小東西：飛鳥、花、蝴蝶，以及一位騎車的人。騎車的人呼應「移動」——老師在教室與教室之間往返，畫裡也就留下一個正在路上的人。這些小東西是線索，不要搶過光、山稜或夜空。</p>
+    </div>
+
+    <div class="process-block" id="process-gold">
+      <h3>金線與交界色：把六幅接成一條路</h3>
+      <p>金線是老師走的路。它在每一幅裡的位置略有不同，像真實的路會起伏，但都落在畫布底邊往上 24 到 33 公分之間。六幅掛起來，視線就會像沿著同一條路往前走。</p>
+      <ul>
+        <li>〈朝陽〉：山稜</li>
+        <li>〈流水〉：河岸</li>
+        <li>〈原彩〉：腳下的路</li>
+        <li>〈樹影〉：林間小徑</li>
+        <li>〈暮色〉：回家的山稜</li>
+        <li>〈星空〉：地平線</li>
+      </ul>
+      <p>畫布高度是 70 公分。下表是金線距底邊的高度；相鄰兩幅在交界處的高度相同，中間雖然有約 10 公分的掛距，眼睛仍會把這條線接起來。</p>
+      <div class="table-wrap">
+        <table class="process">
+          <thead>
+            <tr>
+              <th scope="col">位置</th>
+              <th scope="col">距底邊</th>
+              <th scope="col">說明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>〈朝陽〉左緣</td><td class="num">26 cm</td><td>系列起點，與最右緣同高，讓一天走完後能回到相近的視線。</td></tr>
+            <tr><td>〈朝陽〉與〈流水〉交界</td><td class="num">32 cm</td><td>路在這裡略為升高。</td></tr>
+            <tr><td>〈流水〉與〈原彩〉交界</td><td class="num">24 cm</td><td>全系列最低處，像沿著水岸走下來。</td></tr>
+            <tr><td>〈原彩〉與〈樹影〉交界</td><td class="num">30 cm</td><td>再往林間升起。</td></tr>
+            <tr><td>〈樹影〉與〈暮色〉交界</td><td class="num">27 cm</td><td>略降，接到黃昏的山稜。</td></tr>
+            <tr><td>〈暮色〉與〈星空〉交界</td><td class="num">33 cm</td><td>全系列最高處，接著夜的地平線。</td></tr>
+            <tr><td>〈星空〉右緣</td><td class="num">26 cm</td><td>與〈朝陽〉左緣同高。</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="hang">
+        <svg viewBox="0 0 590 100" role="img" aria-labelledby="hang-title hang-desc" preserveAspectRatio="xMidYMid meet">
+          <title id="hang-title">六幅金線高度示意</title>
+          <desc id="hang-desc">六幅橫向並排的色塊示意，中間有淡色高度帶標示距底邊 24 到 33 公分。金線從朝陽左緣 26 公分起伏經過 32、24、30、27、33 公分，到星空右緣回到 26 公分。</desc>
+          <rect x="0" y="37" width="590" height="9" fill="rgba(232,200,114,.28)"></rect>
+          <rect x="0" y="0" width="90" height="70" fill="#c9a14a"></rect>
+          <rect x="100" y="0" width="90" height="70" fill="#6f9a7a"></rect>
+          <rect x="200" y="0" width="90" height="70" fill="#a45a3a"></rect>
+          <rect x="300" y="0" width="90" height="70" fill="#7a9a45"></rect>
+          <rect x="400" y="0" width="90" height="70" fill="#a4564a"></rect>
+          <rect x="500" y="0" width="90" height="70" fill="#1b2a4a"></rect>
+          <text x="8" y="12" fill="rgba(255,252,246,.9)" font-size="7" font-family="PingFang TC, Noto Sans TC, sans-serif">24–33 cm</text>
+          <path d="M0 44 L90 38 M100 38 L190 46 M200 46 L290 40 M300 40 L390 43 M400 43 L490 37 M500 37 L590 44" fill="none" stroke="#E8C872" stroke-width="1.8" stroke-linecap="round"></path>
+          <text x="45" y="88" text-anchor="middle" fill="#534a40" font-size="9" font-family="PingFang TC, Noto Sans TC, sans-serif">朝陽</text>
+          <text x="145" y="88" text-anchor="middle" fill="#534a40" font-size="9" font-family="PingFang TC, Noto Sans TC, sans-serif">流水</text>
+          <text x="245" y="88" text-anchor="middle" fill="#534a40" font-size="9" font-family="PingFang TC, Noto Sans TC, sans-serif">原彩</text>
+          <text x="345" y="88" text-anchor="middle" fill="#534a40" font-size="9" font-family="PingFang TC, Noto Sans TC, sans-serif">樹影</text>
+          <text x="445" y="88" text-anchor="middle" fill="#534a40" font-size="9" font-family="PingFang TC, Noto Sans TC, sans-serif">暮色</text>
+          <text x="545" y="88" text-anchor="middle" fill="#534a40" font-size="9" font-family="PingFang TC, Noto Sans TC, sans-serif">星空</text>
+        </svg>
+      </div>
+      <p class="hang-caption">示意：淡金帶是 24 到 33 公分的高度範圍，金線在這個範圍裡起伏。色塊只表示各幅的主調，不是完成作品。若一次看不完六幅，可左右滑動。</p>
+
+      <h3>交界色：左右邊緣先接起來</h3>
+      <p>每幅左右兩側約 8 到 10 公分，用交界色濕接濕往中間刷淡，連畫布側邊一起刷。這一層最好在打底時就做，之後最難補的就是這裡。系列最外側（〈朝陽〉左緣與〈星空〉右緣）用同一種灰藍，讓一天的開頭和結尾在顏色上也有呼應。</p>
+      <div class="swatch-row" aria-label="交界色示意">
+        <div class="swatch">
+          <div class="chip" style="background:#E8C872"><code>#E8C872</code></div>
+          <div class="lab"><strong>朝陽｜流水</strong><span>暖金交界</span></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:#8A9A4A"><code>#8A9A4A</code></div>
+          <div class="lab"><strong>流水｜原彩</strong><span>綠金交界</span></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:#5F7A35"><code>#5F7A35</code></div>
+          <div class="lab"><strong>原彩｜樹影</strong><span>深葉綠交界</span></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:#6A5499"><code>#6A5499</code></div>
+          <div class="lab"><strong>樹影｜暮色</strong><span>藍紫交界</span></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:#3B3A6E"><code>#3B3A6E</code></div>
+          <div class="lab"><strong>暮色｜星空</strong><span>暗紫藍交界</span></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:#7C8FA3"><code>#7C8FA3</code></div>
+          <div class="lab"><strong>系列最外側</strong><span>朝陽左緣、星空右緣</span></div>
+        </div>
+      </div>
+
+      <h3>各幅主調與共用的暖金</h3>
+      <p>六幅的主色不同，用來區分一天裡的各個時段。其中〈原彩〉是全系列最飽和的一幅，打底時先收一點，最後裝點再提亮，才不會在一整排裡太跳。</p>
+      <div class="swatch-row" aria-label="各幅主調示意">
+        <div class="swatch">
+          <div class="chip" style="background:linear-gradient(90deg,#E8C872,#D9783A,#8AA0B0)"></div>
+          <div class="lab"><strong>朝陽</strong><span>金黃、橘、冷灰藍</span></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:linear-gradient(90deg,#C9C56A,#7AAA6A,#3D8A9A)"></div>
+          <div class="lab"><strong>流水</strong><span>淡金綠、青藍</span></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:linear-gradient(90deg,#B44A2A,#3D6A3A)"></div>
+          <div class="lab"><strong>原彩</strong><span>赭紅、深綠（最飽和）</span></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:linear-gradient(90deg,#C4C44A,#6A8A3A,#5A4A8A)"></div>
+          <div class="lab"><strong>樹影</strong><span>黃綠、藍紫陰影</span></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:linear-gradient(90deg,#D45A2A,#8A3A6A)"></div>
+          <div class="lab"><strong>暮色</strong><span>橘紅、紫</span></div>
+        </div>
+        <div class="swatch">
+          <div class="chip" style="background:linear-gradient(90deg,#12203A,#1A3A28,#C9A14A)"></div>
+          <div class="lab"><strong>星空</strong><span>深藍、墨綠、一點金</span></div>
+        </div>
+      </div>
+      <p>六幅還共用同一種暖金作為亮部強調色：鈦白加一點淺鎘黃（Cadmium Yellow Light）。〈朝陽〉和〈暮色〉可以用得多一些，〈星空〉只留在月亮和幾顆星上。有了這一個共同的亮色，六幅即使主調差很多，仍會被看成同一組。</p>
+    </div>
+
+    <div class="process-block" id="process-birds">
+      <h3>飛鳥與蝴蝶：怎麼分配，才不會搶戲</h3>
+      <p>飛鳥多半停在畫面右上三分之一，作為貫穿六幅的視線線索。蝴蝶比較貼近地面或植被，位置較低。兩者都是點綴，不要大過光、水、樹或夜空。數量也有節奏：鳥在〈暮色〉最多，像歸巢；蝴蝶在〈原彩〉最明顯，並帶一點點描的筆法。</p>
+      <div class="table-wrap">
+        <table class="process">
+          <thead>
+            <tr>
+              <th scope="col">作品</th>
+              <th scope="col">飛鳥</th>
+              <th scope="col">蝴蝶</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>〈朝陽〉</td><td>一小隻迎光的剪影</td><td>沒有，或只留極小的一點</td></tr>
+            <tr><td>〈流水〉</td><td>一或兩隻低飛在水面上方</td><td>一隻停在岸邊</td></tr>
+            <tr><td>〈原彩〉</td><td>數量少</td><td>全系列最明顯，帶點描筆觸</td></tr>
+            <tr><td>〈樹影〉</td><td>一隻停在枝上</td><td>小小一隻，藏在光斑裡</td></tr>
+            <tr><td>〈暮色〉</td><td>成群歸來，鳥最多的一幅</td><td>一隻停憩</td></tr>
+            <tr><td>〈星空〉</td><td>一隻棲息的剪影，呼應〈朝陽〉</td><td>變成一個光點</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="process-block" id="process-underpaint">
+      <h3>打底五原則：先讓六幅看起來是同一組</h3>
+      <p>打底階段要抓的是明暗結構和共用的顏色，不必先追求細節。細節與裝點可以留到最後一起補。下面五件事，比把某一幅先畫完整更重要。</p>
+      <ol class="tips">
+        <li><strong>明暗分層一樣。</strong>每一幅都是上段最亮、中段中間調、下段最暗，大約各佔三分之一。〈星空〉是夜景，整體會比較暗，但仍要維持「上面比下面亮一點」；月亮那一帶就是它的亮部。</li>
+        <li><strong>地平線和金線落在同一個高度帶。</strong>都在離底邊 24 到 33 公分之間。六幅掛起來，視線才會像沿著同一條路走。</li>
+        <li><strong>暗部用同一個「底色」。</strong>下段剪影區都在各自的顏色裡加一點同一種深色，例如佩恩灰（Payne's Grey），或群青加一點焦赭。這是讓六幅黏在一起最有效的方法，顏色差很多也不會散掉。</li>
+        <li><strong>亮部用同一種暖金。</strong>鈦白加一點淺鎘黃。〈朝陽〉和〈暮色〉可以用得較多，〈星空〉只留在月亮和幾顆星上。</li>
+        <li><strong>左右邊緣先刷交界色。</strong>每幅兩側 8 到 10 公分，濕接濕往中間刷淡，連畫布側邊一起刷。這一步要在打底時就做。</li>
+      </ol>
+      <div class="callout">
+        <h3>兩幅要特別留意</h3>
+        <p>〈原彩〉是全系列最飽和的一幅。打底時先收一點，赭紅裡加一點綠把它壓灰，最後裝點時再提亮，才不會在一整排裡太突出。</p>
+        <p>〈暮色〉的粉紅和紫不要太亮；跟右邊〈星空〉相接的那一側，要慢慢壓到暗紫藍（#3B3A6E）。</p>
+      </div>
+      <p>建議打底時隔幾天就把已經畫的幾幅照順序並排，拍一張縮小的照片來看。哪一幅太亮或太跳，在縮圖上一眼就看得出來。</p>
+      <figure class="palette-fig">
+        <button class="imgwrap wide" type="button" data-lb="images/six-underpaint-palette.png" data-cap="六幅打底色調對照（示意）：上段霧氣、中段主色、下段深色剪影；邊緣為交界色；金線為老師走的路。此圖為色帶示意，不是完成作品。">
+          <img src="images/six-underpaint-palette.png" alt="六幅打底色調示意，由左至右為朝陽、流水、原彩、樹影、暮色、星空：上段較亮、下段較暗，中間有一條起伏的金線，左右邊緣可見交界色。" width="1830" height="320">
+        </button>
+        <figcaption>打底色調對照（示意）：上段霧氣、中段主色、下段深色剪影；邊緣為交界色；金線為老師走的路。顏色是從既定色調推出的示意，實際調色以眼睛為準。</figcaption>
+      </figure>
+    </div>
+
+    <div class="process-block" id="process-stars">
+      <h3>〈星空〉的發想：從素描到畫布上的底</h3>
+      <p>〈星空〉是一天的終點，也是六幅裡最暗的一幅。它的起點是一張鉛筆素描：高雄的夜，有月亮和星星、高雄流行音樂中心、輕軌、一位騎車的人，還有橋。筆觸上想靠近梵谷〈星夜〉那種旋轉、流動的寫法，但要更厚、更粗獷、更抽象，像厚塗油畫的觸感；天空則要夠深、夠暗。</p>
+      <p>畫布上的步驟跟別幅略有不同。老師先在畫布上做出白色的凹凸肌理，再覆上黑色壓克力底漆（Black Gesso），然後在這層深底上打出深藍的天空、一輪大的圓月、白色崖壁，以及深綠的前景。</p>
+      <p>一個實用的提醒：月亮周圍留一圈暖色光暈，就能接上六幅共用的那道暖金；畫面四周則繼續往暗處收，靠近深藍黑（#060B16），夜空才壓得住。下方若要再加街景或人物，可以等整體氣氛穩定之後，再用比較單純的形把它們裝點上去，以免一開始就畫太滿。</p>
+    </div>
+
+    <div class="process-block" id="process-hanging">
+      <h3>掛展規劃：六幅在牆上怎麼站在一起</h3>
+      <p>六幅將排成一列掛出。每幅寬 90 公分、高 70 公分，畫與畫之間留 10 公分，整排寬度約 590 公分。畫心離地約 150 公分，也就是下緣約 115 公分、上緣約 185 公分，接近一般看畫時的視線高度。</p>
+      <p>畫布的側面也要刷上顏色。觀眾是沿著牆走的，會看到畫的厚度；側面若是空白，交界色在兩幅之間就會斷掉。</p>
+    </div>
+
+    <div class="process-block" id="process-progress">
+      <h3>創作進度</h3>
+      <!-- 更新進度時，只改下面這份清單與日期即可。 -->
+      <ul class="status-list">
+        <li><span class="status done">已打底</span>〈暮色〉</li>
+        <li><span class="status done">已打底</span>〈星空〉</li>
+        <li><span class="status next">接下來</span>〈樹影〉</li>
+        <li><span class="status wait">尚未開始</span>〈朝陽〉</li>
+        <li><span class="status wait">尚未開始</span>〈流水〉</li>
+        <li><span class="status wait">尚未開始</span>〈原彩〉</li>
+      </ul>
+      <p class="status-date">進度截至 2026 年 11 月 24 日。細節與裝點會留到最後一起做。</p>
+    </div>
+
+  </div>
+</section>
+
+
 </main>
 <footer>
   <div class="wrap">
-    <p>Akila 阿錡拉　｜　《移動的美術課》藝術史參考　｜　供教學與創作對照，2026 年 11 月建置。</p>
+    <p>Akila 阿錡拉　｜　《移動的美術課》藝術史參考　｜　供教學與創作對照，2026 年 11 月建置，同月增補創作過程說明。</p>
     <p>圖片權利仍歸各授權所示。本站為靜態頁面，不含額外的外部字型或腳本。資料來源見同資料夾的 <a href="SOURCES.md">SOURCES.md</a>。</p>
   </div>
 </footer>
@@ -992,8 +1321,14 @@ footer{
     sections.forEach(function(sec){ if (sec.offsetTop <= y) current = sec; });
     links.forEach(function(a){
       var on = current && a.getAttribute("href") === "#" + current.id;
-      if (on) a.setAttribute("aria-current", "true");
-      else a.removeAttribute("aria-current");
+      if (on){
+        a.setAttribute("aria-current", "true");
+        var nav = a.parentElement;
+        if (nav && nav.scrollWidth > nav.clientWidth){
+          var left = a.offsetLeft - (nav.clientWidth - a.offsetWidth) / 2;
+          nav.scrollLeft = Math.max(0, left);
+        }
+      } else a.removeAttribute("aria-current");
     });
   }
   window.addEventListener("scroll", syncNav, {passive:true});
