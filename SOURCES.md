@@ -43,3 +43,13 @@
 ## 本站原作示意
 
 - `images/six-underpaint-palette.png`：六幅打底色調對照示意，為本站繪製的色帶圖，不是完成作品，亦非他人畫作的複製。
+
+## 背景音樂
+
+- 檔名：`audio/satie-gymnopedie-no1.ogg`（原檔）、`audio/satie-gymnopedie-no1.mp3`（本站轉成 96 kbps，方便部分瀏覽器播放）
+- 樂曲：Erik Satie，《Gymnopédie No. 1》（1888）。作曲已屬公有領域。
+- 演奏：Robin Alciatore，鋼琴，約 2008 年。
+- 授權：演奏者將錄音釋出為公有領域（Public Domain）。Wikimedia Commons 頁面標示 `License: pd`、`LicenseShortName: Public domain`、`Copyrighted: False`。來源為 Musopen。
+- 來源頁：https://commons.wikimedia.org/wiki/File:Erik_Satie_-_gymnopedies_-_la_1_ere._lent_et_douloureux.ogg
+- 原檔：https://upload.wikimedia.org/wikipedia/commons/9/90/Erik_Satie_-_gymnopedies_-_la_1_ere._lent_et_douloureux.ogg （3.53 MB，Ogg Vorbis）
+- 查證日期：2026 年 11 月 24 日，以該 Commons 檔案頁與 API 的 `extmetadata` 為準。

@@ -1,0 +1,168 @@
+/* Enhancements: motion, series explorer, music dock. All optional. */
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  html.js-on .reveal,
+  html.js-on .reveal.is-in,
+  html.js-on .gold-line,
+  html.js-on .hang.is-drawn .gold-line,
+  .card,
+  .swatch,
+  .hang-panel .hang-face{
+    opacity:1 !important;
+    transform:none !important;
+    transition:none !important;
+    animation:none !important;
+    stroke-dashoffset:0 !important;
+  }
+}
+
+/* Scroll reveal only after JS marks the page; otherwise everything stays visible */
+html.js-on .reveal{
+  transition:opacity .9s cubic-bezier(.22,1,.36,1), transform .9s cubic-bezier(.22,1,.36,1);
+}
+html.js-on .reveal:not(.is-in){
+  opacity:0;
+  transform:translateY(16px);
+}
+html.js-on .reveal.is-in{
+  opacity:1;
+  transform:none;
+}
+html.js-on .grid .card.reveal:nth-child(2){transition-delay:.08s}
+html.js-on .grid .card.reveal:nth-child(3){transition-delay:.16s}
+html.js-on .grid .card.reveal:nth-child(4){transition-delay:.08s}
+
+/* Artwork card hover / keyboard focus */
+.card{
+  transition:transform .55s ease, box-shadow .55s ease, border-color .55s ease;
+}
+@media (hover:hover){
+  .card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 16px 36px rgba(40,30,16,.12);
+    border-color:color-mix(in srgb, var(--accent, var(--gold-2)) 45%, var(--rule));
+  }
+}
+.card:focus-within{
+  box-shadow:0 0 0 3px color-mix(in srgb, var(--gold) 35%, transparent);
+}
+
+/* Series explorer */
+.series-live{
+  margin:0 0 18px;
+  max-width:74ch;
+  background:var(--card);
+  border:1px solid var(--rule);
+  border-left:6px solid var(--gold-2);
+  border-radius:12px;
+  padding:14px 16px;
+  min-height:4.5em;
+}
+.series-live p{margin:0 0 6px}
+.series-live p:last-child{margin:0}
+.series-live .series-hint{color:var(--muted);font-size:16px}
+.series-live .jump{
+  display:inline-flex;align-items:center;
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  font-weight:700;font-size:14px;margin-top:8px;
+}
+.hang.is-exploring .hang-panel .hang-face{opacity:.45;transition:opacity .5s ease, stroke .5s ease}
+.hang.is-exploring .hang-panel.is-active .hang-face,
+.hang.is-exploring .hang-panel:hover .hang-face,
+.hang.is-exploring .hang-panel:focus-visible .hang-face{
+  opacity:1;
+  stroke:var(--gold);
+  stroke-width:2;
+}
+.hang-panel{cursor:pointer;outline:none}
+.hang-panel:focus-visible .hang-face{stroke:var(--gold);stroke-width:2}
+.gold-line{pointer-events:none}
+html.js-on .gold-line{
+  stroke-dasharray:1;
+  stroke-dashoffset:1;
+}
+html.js-on .hang.is-drawn .gold-line{
+  stroke-dashoffset:0;
+  transition:stroke-dashoffset 2.2s ease-in-out;
+}
+
+button.swatch, a.swatch{
+  appearance:none;-webkit-appearance:none;
+  display:block;width:100%;
+  font:inherit;color:inherit;text-align:left;text-decoration:none;
+  cursor:pointer;
+  transition:transform .45s ease, box-shadow .45s ease, border-color .45s ease, opacity .45s ease;
+}
+button.swatch:focus-visible, a.swatch:focus-visible,
+table.process tbody tr[tabindex]:focus-visible{
+  outline:3px solid var(--gold);outline-offset:2px;
+}
+@media (hover:hover){
+  button.swatch:hover, a.swatch:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(40,30,16,.1);
+  }
+}
+.swatch-row.is-exploring .swatch{opacity:.42}
+.swatch-row.is-exploring .swatch.is-active,
+.swatch-row.is-exploring .swatch:hover,
+.swatch-row.is-exploring .swatch:focus-visible{opacity:1;border-color:var(--gold)}
+table.process tbody tr.is-active{
+  background:color-mix(in srgb, var(--gold-2) 16%, var(--card));
+}
+table.process tbody tr[tabindex]{cursor:pointer}
+table.process.is-exploring tbody tr{opacity:.42;transition:opacity .4s ease, background .4s ease}
+table.process.is-exploring tbody tr.is-active,
+table.process.is-exploring tbody tr:hover,
+table.process.is-exploring tbody tr:focus-visible{opacity:1}
+
+/* Music dock */
+.music-dock{
+  position:fixed;right:16px;bottom:16px;z-index:20;
+  width:min(280px, calc(100% - 32px));
+  display:flex;flex-direction:column;align-items:flex-end;gap:8px;
+  pointer-events:none;
+}
+.music-dock *{pointer-events:auto}
+.music-toggle{
+  appearance:none;-webkit-appearance:none;
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  font-size:14px;font-weight:700;
+  background:var(--ink);color:var(--paper);
+  border:0;border-radius:999px;
+  padding:10px 16px;
+  box-shadow:0 8px 24px rgba(40,30,16,.18);
+  cursor:pointer;
+}
+.music-toggle[aria-pressed="true"]{background:var(--gold)}
+.music-toggle:hover,.music-toggle:focus-visible{background:var(--gold)}
+.music-toggle:focus-visible{outline:3px solid var(--gold-2);outline-offset:3px}
+.music-credit-short{
+  display:none;
+  margin:0;
+  font-family:"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  font-size:12px;line-height:1.5;color:var(--muted);
+  background:rgba(255,252,246,.94);
+  border:1px solid var(--rule);border-radius:12px;
+  padding:8px 10px;
+  max-width:100%;
+}
+.music-dock:hover .music-credit-short,
+.music-dock:focus-within .music-credit-short,
+.music-toggle[aria-pressed="true"] + .music-credit-short{
+  display:block;
+}
+footer{padding-bottom:88px}
+footer .music-credit{margin-top:12px;max-width:80ch}
+@media print{
+  .music-dock,.series-hint{display:none!important}
+  footer{padding-bottom:28px}
+}
+#series-clear{
+  appearance:none;border:0;background:none;padding:0;margin-top:8px;
+  font:inherit;font-weight:700;color:var(--link);
+  text-decoration:underline;text-underline-offset:3px;cursor:pointer;
+}
+#series-clear:hover,#series-clear:focus-visible{color:var(--link-h)}
+#series-clear[hidden]{display:none}
